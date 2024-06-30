@@ -72,7 +72,7 @@ TBD
 
 ### Konklúzió
 
-A legtöbb kapcsolat HTTPS alatt fut, ez titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk a kiszolgálóval. A DNS/TLS protokollok biztonsági rései miatt viszont megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni politikai hovatartozásunkat, szokásainkat, érdeklődési körünket névreszólóan.
+A legtöbb kapcsolat HTTPS alatt fut, ez titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk rajta. A DNS/TLS protokollok biztonsági rései miatt viszont megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni valaki politikai hovatartozását, szokásait, érdeklődési körét névreszólóan. Általános megoldás nincs a probléma kivédésére, az ECH bizonyos lapokat eltakarhat, de a többségüket jelenleg nem.
 
 ## Mit lát a weboldal, amihez kapcsolódunk?
 
