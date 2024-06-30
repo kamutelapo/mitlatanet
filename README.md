@@ -1,4 +1,4 @@
-- [Mennyit lát belőlünk az internet?](#mennyit-lát-belőlünk-az-internet)
+- [Mit árul el rólunk az internet?](#mit-árul-el-rólunk-az-internet)
   - [Mit lát a szolgáltató - az internetes protokoll sebezhetőségei](#mit-lát-a-szolgáltató---az-internetes-protokoll-sebezhetőségei)
     - [Az IP címről](#az-ip-címről)
     - [A névfeloldás problémái (DNS)](#a-névfeloldás-problémái-dns)
@@ -38,13 +38,14 @@
   - [Hogyan használhatunk névtelenül szkripteket is?](#hogyan-használhatunk-névtelenül-szkripteket-is)
   - [Konklúzió](#konklúzió-1)
 
-# Mennyit lát belőlünk az internet?
+
+![Mit árul el rólunk az internet](kepek/mit_arul_el_az_internet.png)
+
+# Mit árul el rólunk az internet?
 
 Érdekelt, hogy internetezés közben ha valaki belehallgat a titkosított adatfolyamokba hozzájuthat-e értékes információkhoz. A dokumentum azt elemzi ki, hogy lehetséges-e belehallgatni és abból használható információkat levonni. Az elemzés elvi szintű, hogy a valóságban mi történik, azt nem tudom.
 
 Az elemzéshez a wireshark hálózati analizátort használtam.
-
-TBD: kép
 
 
 ## Mit lát a szolgáltató - az internetes protokoll sebezhetőségei
