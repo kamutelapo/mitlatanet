@@ -1,13 +1,15 @@
+![Mit árul el rólunk az internet](kepek/mit_arul_el_az_internet.png)
+
 - [Mit árul el rólunk az internet?](#mit-árul-el-rólunk-az-internet)
-  - [Mit lát a szolgáltató - az internetes protokoll sebezhetőségei](#mit-lát-a-szolgáltató---az-internetes-protokoll-sebezhetőségei)
+  - [Mit lát a szolgáltató / az internetes protokoll sebezhetőségei](#mit-lát-a-szolgáltató--az-internetes-protokoll-sebezhetőségei)
     - [Az IP címről](#az-ip-címről)
-    - [A névfeloldás problémái (DNS)](#a-névfeloldás-problémái-dns)
-    - [Megoldások a névfeloldás titkosítására: DNS-over-HTTP, DNS-over-TLS](#megoldások-a-névfeloldás-titkosítására-dns-over-http-dns-over-tls)
-    - [A titkosított TLS Client Hello üzenet sebezhetősége](#a-titkosított-tls-client-hello-üzenet-sebezhetősége)
-    - [Megoldás a Client Hello üzenet javítására (ECH)](#megoldás-a-client-hello-üzenet-javítására-ech)
+    - [A titkosítás nélküli névfeloldás problémái (DNS)](#a-titkosítás-nélküli-névfeloldás-problémái-dns)
+    - [Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS](#megoldások-a-névfeloldás-eltakarására-dns-over-https-dns-over-tls)
+    - [A titkosított TLS Client Hello üzenetének sebezhetősége](#a-titkosított-tls-client-hello-üzenetének-sebezhetősége)
+    - [Megoldás a Client Hello üzenet eltakarására (ECH)](#megoldás-a-client-hello-üzenet-eltakarására-ech)
     - [Konklúzió](#konklúzió)
-  - [Mit lát a másik oldal (a weblap, amit lekérek)?](#mit-lát-a-másik-oldal-a-weblap-amit-lekérek)
-    - [Egy weblap, amely felfedi, hogy milyen információt lát tőlünk](#egy-weblap-amely-felfedi-hogy-milyen-információt-lát-tőlünk)
+  - [Mit lát a weboldal, amihez kapcsolódunk?](#mit-lát-a-weboldal-amihez-kapcsolódunk)
+    - [Létezik egy oldal, amely megmutatja, hogy mit lát belőlünk](#létezik-egy-oldal-amely-megmutatja-hogy-mit-lát-belőlünk)
     - [Helymeghatározás IP címmel](#helymeghatározás-ip-címmel)
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
@@ -39,8 +41,6 @@
   - [Konklúzió](#konklúzió-1)
 
 
-![Mit árul el rólunk az internet](kepek/mit_arul_el_az_internet.png)
-
 # Mit árul el rólunk az internet?
 
 Érdekelt, hogy internetezés közben ha valaki belehallgat a titkosított adatfolyamokba hozzájuthat-e értékes információkhoz. A dokumentum azt elemzi ki, hogy lehetséges-e belehallgatni és abból használható információkat levonni. Az elemzés elvi szintű, hogy a valóságban mi történik, azt nem tudom.
@@ -48,35 +48,35 @@
 Az elemzéshez a wireshark hálózati analizátort használtam.
 
 
-## Mit lát a szolgáltató - az internetes protokoll sebezhetőségei
+## Mit lát a szolgáltató / az internetes protokoll sebezhetőségei
 
 ### Az IP címről
 
 TBD
 
-### A névfeloldás problémái (DNS)
+### A titkosítás nélküli névfeloldás problémái (DNS)
 
 TBD
 
-### Megoldások a névfeloldás titkosítására: DNS-over-HTTP, DNS-over-TLS
+### Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS
 
 TBD
 
-### A titkosított TLS Client Hello üzenet sebezhetősége
+### A titkosított TLS Client Hello üzenetének sebezhetősége
 
 TBD
 
-### Megoldás a Client Hello üzenet javítására (ECH)
+### Megoldás a Client Hello üzenet eltakarására (ECH)
 
 TBD
 
 ### Konklúzió
 
-TBD
+A legtöbb kapcsolat HTTPS alatt fut, ez titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk a kiszolgálóval. A DNS/TLS protokollok biztonsági rései miatt viszont megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni politikai hovatartozásunkat, szokásainkat, érdeklődési körünket névreszólóan.
 
-## Mit lát a másik oldal (a weblap, amit lekérek)?
+## Mit lát a weboldal, amihez kapcsolódunk?
 
-### Egy weblap, amely felfedi, hogy milyen információt lát tőlünk
+### Létezik egy oldal, amely megmutatja, hogy mit lát belőlünk
 
 TBD
 
