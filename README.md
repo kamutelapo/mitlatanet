@@ -14,9 +14,10 @@
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
       - [Javascript (futtatható kód) felhasználása a gép képességeinek felderítésére](#javascript-futtatható-kód-felhasználása-a-gép-képességeinek-felderítésére)
-  - [Információcsere weblapok között](#információcsere-weblapok-között)
+    - [Információcsere weblapok között](#információcsere-weblapok-között)
     - [A reklámok, nyomkövetők működése](#a-reklámok-nyomkövetők-működése)
     - [Süti harmadik félnek](#süti-harmadik-félnek)
+    - [Konklúzió](#konklúzió-1)
 - [Megoldások az információ áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
   - [Reklámok blokkolása](#reklámok-blokkolása)
   - [Ujjlenyomat meghamisítása](#ujjlenyomat-meghamisítása)
@@ -38,7 +39,7 @@
   - [www.facebook.com](#wwwfacebookcom)
   - [www.cloudflare.com](#wwwcloudflarecom)
   - [Hogyan használhatunk névtelenül szkripteket is?](#hogyan-használhatunk-névtelenül-szkripteket-is)
-  - [Konklúzió](#konklúzió-1)
+  - [Konklúzió](#konklúzió-2)
 
 
 # Mit árul el rólunk az internet?
@@ -96,7 +97,7 @@ TBD
 
 TBD
 
-## Információcsere weblapok között
+### Információcsere weblapok között
 
 TBD
 
@@ -105,6 +106,10 @@ TBD
 TBD
 
 ### Süti harmadik félnek
+
+TBD
+
+### Konklúzió
 
 TBD
 
