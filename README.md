@@ -14,10 +14,11 @@
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
       - [Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére](#javascript-futtatható-kód-felhasználása-a-számítógépünk-telefonunk-képességeinek-felderítésére)
+    - [Konklúzió](#konklúzió-1)
   - [Információcsere internetes weblapok között](#információcsere-internetes-weblapok-között)
     - [A reklámok, nyomkövetők működése](#a-reklámok-nyomkövetők-működése)
     - [Süti harmadik félnek](#süti-harmadik-félnek)
-    - [Konklúzió](#konklúzió-1)
+    - [Konklúzió](#konklúzió-2)
 - [Megoldások az információ áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
   - [Reklámok blokkolása](#reklámok-blokkolása)
   - [A digitális ujjlenyomat meghamisítása](#a-digitális-ujjlenyomat-meghamisítása)
@@ -39,7 +40,7 @@
   - [www.facebook.com](#wwwfacebookcom)
   - [www.cloudflare.com](#wwwcloudflarecom)
   - [Hogyan használhatunk névtelenül szkripteket is?](#hogyan-használhatunk-névtelenül-szkripteket-is)
-  - [Konklúzió](#konklúzió-2)
+  - [Konklúzió](#konklúzió-3)
 
 
 # Mit árul el rólunk az internet?
@@ -117,9 +118,9 @@ Ha kíváncsiak vagyunk, hogy mit lát a túloldal, érdemes megnyitni a [https:
 
 ### Helymeghatározás IP címmel
 
-Az IP cím-nk a túloldal számára egész pontosan megjelöli, hogy hol vagyunk.
+Az IP címünk a túloldal számára közelítőleg megjelöli, hogy hol vagyunk. Ezt külföldi cikkek úgy fogalmazzák meg, hogy a régiót eltalálja.
 
-TBD
+![IP hely](kepek/ip_hely.png)
 
 ### Digitális ujjlenyomatok
 
@@ -130,6 +131,10 @@ TBD
 TBD
 
 #### Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére
+
+TBD
+
+### Konklúzió
 
 TBD
 
