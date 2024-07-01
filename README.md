@@ -24,7 +24,8 @@
   - [Reklámok blokkolása](#reklámok-blokkolása)
   - [A digitális ujjlenyomat meghamisítása](#a-digitális-ujjlenyomat-meghamisítása)
   - [Megakadályozni sütik harmadik félnek történő átadását](#megakadályozni-sütik-harmadik-félnek-történő-átadását)
-- [Amikor teljes sötétség és senki sem ismer senkit](#amikor-teljes-sötétség-és-senki-sem-ismer-senkit)
+  - [AMP tiltása](#amp-tiltása)
+- [Úton a teljes sötétség felé](#úton-a-teljes-sötétség-felé)
   - [A TOR hálózat (dark web)](#a-tor-hálózat-dark-web)
     - [A hálózat működése](#a-hálózat-működése)
     - [Legális-e a használata?](#legális-e-a-használata)
@@ -175,7 +176,11 @@ TBD
 
 TBD
 
-# Amikor teljes sötétség és senki sem ismer senkit
+## AMP tiltása
+
+TBD
+
+# Úton a teljes sötétség felé
 
 TBD
 
