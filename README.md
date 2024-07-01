@@ -44,7 +44,7 @@
 
 # Mit árul el rólunk az internet?
 
-Felvetődhet a kérdés, hogy internetezés közben valaki belehallgat-e a titkosított adatfolyamokba, hozzájuthat-e értékes információkhoz rólunk. A dokumentum azt elemzi ki, hogy ez elvi szinten lehetséges-e, hogy a valóságban megtörténik-e, azt nem tudom.
+Felvetődhet a kérdés, hogy internetezés közben valaki belehallgat-e a titkosított adatfolyamokba, hozzájuthat-e értékes információkhoz rólunk. A dokumentum azt elemzi ki, hogy ez elvi szinten lehetséges-e. Hogy a valóságban mi történik, azt nem tudom.
 
 Az elemzéshez a wireshark hálózati analizátort használtam.
 
@@ -70,24 +70,24 @@ Az IP címünk közelítő információt is elmond a lakhelyünkről bárkinek.
 
 ![DNS probléma](kepek/dns_problema.png)
 
-A névfeloldás azt jelenti, hogy amikor egy weboldalt megkeresünk (pl. github.org), akkor a névből IP címet állít elő egy távoli szolgáltatás (140.82.121.3) és az internetes csomagjaink erre a címre fognak elmenni. A kommunikáció titkosítatlan formában történik. Aki belehallgat a hálózati beszélgetésünkbe (lásd kép), tudni fogja, hogy milyen weblapokat látogatunk meg.
+A névfeloldás azt jelenti, hogy amikor egy weboldalt megkeresünk (pl. www.github.org), akkor a névből IP címet állít elő egy távoli szolgáltatás (140.82.121.3) és az internetes csomagjaink erre a címre fognak elmenni. A kommunikáció titkosítatlan formában történik. Aki belehallgat a hálózati beszélgetésünkbe (lásd kép), tudni fogja, hogy milyen weblapokat látogatunk meg.
 
-Mivel az adatfolyam titkosítatlan, ezért szolgáltató képes hamis választ is visszaadni, másik kiszolgálóhoz átirányítani.
+Mivel az adatfolyam titkosítatlan, ezért szolgáltató képes hamis választ is visszaadni, vagy másik kiszolgálóhoz átirányítani.
 
-Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszközzel él. A csomagjaink nem fognak eljutni a weblaphoz, hanem egy másik oldal jelenik majd meg helyette, amelyik értesít, hogy a tartalom tiltva van.
+Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszközzel él. A csomagjaink nem fognak eljutni az eredeti weblaphoz, hanem egy másik oldal jelenik meg helyette, amelyik értesít, hogy a tartalom tiltva lett.
 
 
 ### Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS
 
-A szakemberek észlelték, hogy a DNS csomagokkal komoly bajok vannak, bárki belematathat, átirányíthat, letilthat lekéréseket a szolgáltatói oldalról.
-Megjelentek megoldások a DNS forgalom eltakarására, publikus DNS névfeloldó rendszerekkel. Ezek a szolgáltatók úgy termelnek pénzt, hogy elemzik a lekéréseket, összképet kapva az internetes szokásainkról.
-Elég nekik azt megtudni, hogy X millió embert mi érdekel jelenleg, nincs szükségük rá, hogy személyre szabottan bármit megtudjanak. Sőt, pornószűrést, IP loggolás tiltását és egyéb szolgáltatásokat is biztosítanak, hogy ők férhessenek hozzá az értékes adatainkhoz.
+A szakemberek észlelték, hogy a DNS csomagokkal komoly bajok lehetnek, bárki belematathat, átirányíthat, letilthat lekéréseket, ezért biztonságosabb, ha azok is titkosított csatornán haladnak.
+Megjelentek megoldások a DNS forgalom eltakarására publikus DNS névfeloldó rendszerekkel. Ezek a szolgáltatók úgy termelnek pénzt, hogy elemzik a lekéréseket, összképet kapva az internetes szokásainkról.
+Elég nekik azt tudni, hogy X millió embert mi érdekel, nincs szükségük a személyes adatainkra. Némelyik szolgáltató pornószűrést, anonimitást és egyéb extra szolgáltatást is biztosít, hogy nekik szolgáltassunk az adatainkat.
 
 A nagyobb publikus DNS szolgáltatók közül a következőket említeném:
 * Cloudflare (1.1.1.1, a leggyorsabb, teljes névtelenséget ígér)
 * Google (8.8.8.8)
 
-Kép, hogy hogyan lehet Firefox alatt a DNS-over-HTTPS-t bekapcsolni Cloudflare alá (Adatvédelem és biztonság almenü).
+Firefox alatt így lehet a DNS-over-HTTPS-t bekapcsolni Cloudflare alá (Adatvédelem és biztonság almenü).
 
 ![DNS-over-HTTPS](kepek/dns-over-https.png)
 
@@ -95,19 +95,19 @@ Kép, hogy hogyan lehet Firefox alatt a DNS-over-HTTPS-t bekapcsolni Cloudflare 
 
 A DNS-over-TLS vagy a DNS-over-HTTPS bekapcsolásával a szolgáltató többé nem fogja látni a DNS üzeneteinkből, hogy milyen weboldalakat olvasunk. Ezek a megoldások megvédik a DNS forgalmat.
 
-Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt (Client Hello üzenet). Amint a weboldalhoz kapcsolódunk, minden teljesen láthatóvá válik számára.
+Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt (Client Hello üzenet). Amint a weboldalhoz kapcsolódunk, teljesen láthatóvá válik bárki számára, hogy kivel beszélünk. Egyetlen komoly előnye van a titkosított DNS üzenetnek, hogy nem lehet meghamisítani. A lehallgatástól nem véd meg.
 
-A szolgáltató ugyanezt az adatot megkaphatja egy másik forrásból is, mert továbbra sincs eltakarva, viszont hamisítani már nem tudja, csak tiltani.
+Képen a lehallgatott kommunikáció:
 
 TBD
 
 ### Megoldás a Client Hello üzenet eltakarására (ECH)
 
-TBD
+Természetesen a szakemberek észlelték a problémát, hogy nem előnyös, ha bárki megtudhatja, hogy milyen oldalakkal beszélgetünk, ezért megjelent az ESNI, majd később ECH megoldás. Az ECH titkosítja a Client Hello üzenetnek a problémás részét, kitakarva belőle minden értékes adatot. Az ECH opcionális, jelenleg nagyon kevés weboldal támogatja. Firefox alatt a DNS-over-HTTPS ECH-t is használ, ha lehet, de az internetes oldalak 95%-a még nem támogatja. Reméljük ez megváltozik a jövőben.
 
 ### Konklúzió
 
-A legtöbb kapcsolat HTTPS alatt fut, ez titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk rajta. A DNS/TLS protokollok biztonsági rései miatt viszont megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni valaki politikai hovatartozását, szokásait, érdeklődési körét névreszólóan. Általános megoldás nincs a probléma kivédésére, az ECH bizonyos lapokat eltakarhat, de a többségüket jelenleg nem.
+A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk rajta. A DNS/TLS protokollok biztonsági rései miatt viszont elvileg megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni valaki politikai hovatartozását, szokásait, érdeklődési körét névreszólóan. Elvileg tehát nem lehetetlen megoldani. Bízunk benne, hogy nem teszik meg. Általános megoldás jelenleg nincs a probléma kivédésére, az ECH bizonyos lapokat eltakarhat, de a többségük titkosítatlanul fog megérkezni.
 
 ## Mit lát a weboldal, amihez kapcsolódunk?
 
