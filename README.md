@@ -44,7 +44,7 @@
 
 # Mit árul el rólunk az internet?
 
-Utánajártam, hogy internetezés közben ha valaki belehallgat a titkosított adatfolyamokba, hozzájuthat-e értékes információkhoz rólunk. A dokumentum azt elemzi ki, hogy ez lehetséges-e elvi szinten, hogy a valóságban megtörténik-e, azt nem tudom.
+Felvetődhet a kérdés, hogy internetezés közben valaki belehallgat-e a titkosított adatfolyamokba, hozzájuthat-e értékes információkhoz rólunk. A dokumentum azt elemzi ki, hogy ez elvi szinten lehetséges-e, hogy a valóságban megtörténik-e, azt nem tudom.
 
 Az elemzéshez a wireshark hálózati analizátort használtam.
 
