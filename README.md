@@ -74,7 +74,7 @@ A névfeloldás azt jelenti, hogy amikor egy weboldalt megkeresünk (pl. www.git
 
 Mivel az adatfolyam titkosítatlan, ezért szolgáltató képes hamis választ is visszaadni, vagy másik kiszolgálóhoz átirányítani.
 
-Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszközzel él. A csomagjaink nem fognak eljutni az eredeti weblaphoz, hanem egy másik oldal jelenik meg helyette, amelyik értesít, hogy a tartalom tiltva lett.
+Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszközzel él. A csomagjaink nem fognak eljutni az eredeti weblaphoz, hanem egy másik oldal jelenik meg helyette, amelyik értesít, hogy a tartalom tiltásra került.
 
 
 ### Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS
@@ -113,7 +113,7 @@ A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem l�
 
 ### Létezik egy oldal, amely megmutatja, hogy mit lát belőlünk
 
-TBD
+Ha kíváncsiak vagyunk, hogy mit lát belőlünk a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk jutnak el tőlünk hozzá.
 
 ### Helymeghatározás IP címmel
 
