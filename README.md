@@ -18,6 +18,7 @@
   - [Információcsere internetes weblapok között](#információcsere-internetes-weblapok-között)
     - [A reklámok, nyomkövetők működése](#a-reklámok-nyomkövetők-működése)
     - [Süti harmadik félnek](#süti-harmadik-félnek)
+    - [AMP, gyorsított mobiloldalak](#amp-gyorsított-mobiloldalak)
     - [Konklúzió](#konklúzió-2)
 - [Megoldások az információ áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
   - [Reklámok blokkolása](#reklámok-blokkolása)
@@ -147,6 +148,10 @@ TBD
 TBD
 
 ### Süti harmadik félnek
+
+TBD
+
+### AMP, gyorsított mobiloldalak
 
 TBD
 
