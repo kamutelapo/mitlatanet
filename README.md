@@ -13,26 +13,26 @@
     - [Helymeghatározás IP címmel](#helymeghatározás-ip-címmel)
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
-      - [Javascript (futtatható kód) felhasználása a gép képességeinek felderítésére](#javascript-futtatható-kód-felhasználása-a-gép-képességeinek-felderítésére)
+      - [Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére](#javascript-futtatható-kód-felhasználása-a-számítógépünk-telefonunk-képességeinek-felderítésére)
   - [Információcsere internetes weblapok között](#információcsere-internetes-weblapok-között)
     - [A reklámok, nyomkövetők működése](#a-reklámok-nyomkövetők-működése)
     - [Süti harmadik félnek](#süti-harmadik-félnek)
     - [Konklúzió](#konklúzió-1)
 - [Megoldások az információ áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
   - [Reklámok blokkolása](#reklámok-blokkolása)
-  - [Ujjlenyomat meghamisítása](#ujjlenyomat-meghamisítása)
+  - [A digitális ujjlenyomat meghamisítása](#a-digitális-ujjlenyomat-meghamisítása)
   - [Megakadályozni sütik harmadik félnek történő átadását](#megakadályozni-sütik-harmadik-félnek-történő-átadását)
 - [Amikor teljes sötétség és senki sem ismer senkit](#amikor-teljes-sötétség-és-senki-sem-ismer-senkit)
   - [A TOR hálózat (dark web)](#a-tor-hálózat-dark-web)
     - [A hálózat működése](#a-hálózat-működése)
     - [Legális-e a használata?](#legális-e-a-használata)
-    - [A telepítés menete](#a-telepítés-menete)
+    - [A TOR böngésző telepítésének menete](#a-tor-böngésző-telepítésének-menete)
     - [A nyelv átállítása](#a-nyelv-átállítása)
     - [Szkriptek (futtatható kód) tiltása](#szkriptek-futtatható-kód-tiltása)
-    - [Kipróbálhatjuk, hogy mennyit lát a túloldal](#kipróbálhatjuk-hogy-mennyit-lát-a-túloldal)
-    - [Vajon a TLS Client Hello lát-e minket?](#vajon-a-tls-client-hello-lát-e-minket)
+    - [Ennyit lát a túloldal](#ennyit-lát-a-túloldal)
+    - [Mi történik a TLS Client Hello-val?](#mi-történik-a-tls-client-hello-val)
     - [Az onion címek](#az-onion-címek)
-- [Kik vannak velünk a teljes névtelenségben?](#kik-vannak-velünk-a-teljes-névtelenségben)
+- [Hogyan viszonyulnak az egyes szolgáltatók a névtelenséghez?](#hogyan-viszonyulnak-az-egyes-szolgáltatók-a-névtelenséghez)
   - [www.google.com](#wwwgooglecom)
   - [www.duckduckgo.com](#wwwduckduckgocom)
   - [www.brave.com](#wwwbravecom)
@@ -61,7 +61,7 @@ A szolgáltatótól kapott IP cím kinézete:
 
 Az IP címünk közelítő információt is elmond a lakhelyünkről bárkinek.
 
-https://browserleaks.com/ip
+[https://browserleaks.com/ip](https://browserleaks.com/ip)
 
 ![IP cím](kepek/ip_cim.png)
 
@@ -127,7 +127,7 @@ TBD
 
 TBD
 
-#### Javascript (futtatható kód) felhasználása a gép képességeinek felderítésére
+#### Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére
 
 TBD
 
@@ -155,7 +155,7 @@ TBD
 
 TBD
 
-## Ujjlenyomat meghamisítása
+## A digitális ujjlenyomat meghamisítása
 
 TBD
 
@@ -179,7 +179,7 @@ TBD
 
 TBD
 
-### A telepítés menete
+### A TOR böngésző telepítésének menete
 
 TBD
 
@@ -191,11 +191,11 @@ TBD
 
 TBD
 
-### Kipróbálhatjuk, hogy mennyit lát a túloldal
+### Ennyit lát a túloldal
 
 TBD
 
-### Vajon a TLS Client Hello lát-e minket?
+### Mi történik a TLS Client Hello-val?
 
 TBD
 
@@ -203,7 +203,7 @@ TBD
 
 TBD
 
-# Kik vannak velünk a teljes névtelenségben?
+# Hogyan viszonyulnak az egyes szolgáltatók a névtelenséghez?
 
 TBD
 
