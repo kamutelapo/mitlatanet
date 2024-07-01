@@ -79,9 +79,25 @@ Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszkö
 
 ### Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS
 
-TBD
+A szakemberek észlelték, hogy a DNS csomagokkal komoly bajok vannak, bárki belematathat, átirányíthat, letilthat lekéréseket a szolgáltatói oldalról.
+Megjelentek megoldások a DNS forgalom eltakarására, publikus DNS tartalomszolgáltató rendszerekkel. Ezek a szolgáltatók úgy termelnek pénzt, hogy elemzik a lekéréseket, összképet kapva az internetes szokásainkról.
+Elég nekik azt megtudni, hogy X millió embert mi érdekel jelenleg, nincs szükségük rá, hogy személyre szabottan bármit megtudjanak. Sőt, pornószűrést, IP loggolás tiltását és egyéb szolgáltatásokat is biztosítanak, hogy ők elemezhessék az értékes adatainkat.
+
+A nagyobb publikus DNS szolgáltatók közül a következőket említeném:
+* Cloudflare (1.1.1.1, a leggyorsabb, teljes névtelenséget reklámoz)
+* Google (8.8.8.8)
+
+Kép, hogy hogyan lehet Firefox alatt a DNS-over-HTTPS-t bekapcsolni Cloudflare alá (Adatvédelem és biztonság almenü).
+
+![DNS-over-HTTPS](kepek/dns-over-https.png)
 
 ### A titkosított TLS Client Hello üzenetének sebezhetősége
+
+A DNS-over-TLS vagy a DNS-over-HTTPS bekapcsolásával a szolgáltató többé nem fogja látni a DNS üzeneteinkből, hogy milyen weboldalakat olvasunk. Ezek a megoldások megvédik a DNS forgalmat.
+
+Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt (Client Hello üzenet). Amint a weboldalhoz kapcsolódunk, minden teljesen láthatóvá válik számára.
+
+A szolgáltató ugyanezt az adatot megkaphatja egy másik forrásból is, mert továbbra sincs eltakarva, viszont hamisítani már nem tudja, csak tiltani.
 
 TBD
 
