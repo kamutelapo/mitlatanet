@@ -103,7 +103,7 @@ Képen a lehallgatott kommunikáció, az alive.github.com tisztán kivehető:
 
 ### Megoldás a Client Hello üzenet eltakarására (ECH)
 
-Természetesen a szakemberek észlelték a problémát, hogy nem előnyös, ha bárki megtudhatja, hogy milyen oldalakkal beszélgetünk, ezért megjelent az ESNI, majd később ECH megoldás. Az ECH titkosítja a Client Hello üzenetnek a problémás részét, kitakarva belőle minden érzékeny adatot. Az ECH opcionális, jelenleg nagyon kevés weboldal támogatja. Firefox alatt a DNS-over-HTTPS ECH-t is használna, de az internetes oldalak 95%-a még nem támogatja. Reméljük ez megváltozik a jövőben.
+Természetesen a szakemberek észlelték a problémát, hogy nem előnyös, ha bárki megtudhatja, hogy milyen oldalakkal beszélgetünk, ezért megjelent az ESNI, majd később ECH megoldás. Az ECH titkosítja a Client Hello üzenetnek a problémás részét, kitakarva belőle minden érzékeny adatot. Az ECH opcionális, jelenleg nagyon kevés weboldal támogatja. Firefox alatt a DNS-over-HTTPS ECH-t is használna, de minthogy az oldalak 95%-a nem implementálta, sokra nem megyünk vele. Reméljük ez megváltozik a jövőben.
 
 ### Konklúzió
 
@@ -116,6 +116,8 @@ A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem l�
 Ha kíváncsiak vagyunk, hogy mit lát a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk jutnak el hozzájuk.
 
 ### Helymeghatározás IP címmel
+
+Az IP cím-nk a túloldal számára egész pontosan megjelöli, hogy hol vagyunk.
 
 TBD
 
