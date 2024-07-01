@@ -44,7 +44,7 @@
 
 # Mit árul el rólunk az internet?
 
-Érdekelt, hogy internetezés közben ha valaki belehallgat a titkosított adatfolyamokba hozzájuthat-e értékes információkhoz. A dokumentum azt elemzi ki, hogy lehetséges-e belehallgatni és abból használható információkat levonni. Az elemzés elvi szintű, hogy a valóságban mi történik, azt nem tudom.
+Utánajártam, hogy internetezés közben ha valaki belehallgat a titkosított adatfolyamokba, hozzájuthat-e értékes információkhoz rólunk. A dokumentum azt elemzi ki, hogy ez lehetséges-e elvi szinten, hogy a valóságban megtörténik-e, azt nem tudom.
 
 Az elemzéshez a wireshark hálózati analizátort használtam.
 
@@ -53,17 +53,18 @@ Az elemzéshez a wireshark hálózati analizátort használtam.
 
 ### Az IP címről
 
-Amikor az internetre csatlakozunk, a szolgáltató ad nekünk egy címet, ami egyértelműen azonosít minket. Az előfizetésünk alapján követhetőek vagyunk, tehát ha támadást indítunk, név és cím szerint azonosíthatóak leszünk.
+Amikor az internetre csatlakozunk, a szolgáltató ad nekünk egy címet, ami egyértelműen azonosít minket. Az előfizetésünk alapján követhetőek vagyunk, tehát ha támadást indítunk, név és cím szerint azonosíthatóak leszünk. Mindez nem probléma, a kérdés, hogy mennyire lát a szolgáltató bele az internetes tevékenységünkbe?
 
-Az IP cím kinézete:
+A szolgáltatótól kapott IP cím kinézete:
 * IPv4 cím: 104.26.15.72 (négy számból áll)
 * IPv6 cím: 2606:4700:20::681a:f48 (hexadecimális számjegyekből áll)
 
-Az nem probléma, hogy azonosítanak minket, a kérdés, hogy mennyire látnak bele az internetes tevékenységünkbe?
-
 Az IP címünk közelítő információt is elmond a lakhelyünkről bárkinek.
 
-TBD
+https://browserleaks.com/ip
+
+![IP cím](kepek/ip_cim.png)
+
 
 ### A titkosítatlan névfeloldás problémái (DNS)
 
