@@ -3,7 +3,7 @@
 - [Mit árul el rólunk az internet?](#mit-árul-el-rólunk-az-internet)
   - [Mit lát a szolgáltató / az internetes protokoll sebezhetőségei](#mit-lát-a-szolgáltató--az-internetes-protokoll-sebezhetőségei)
     - [Az IP címről](#az-ip-címről)
-    - [A titkosítás nélküli névfeloldás problémái (DNS)](#a-titkosítás-nélküli-névfeloldás-problémái-dns)
+    - [A titkosítatlan névfeloldás problémái (DNS)](#a-titkosítatlan-névfeloldás-problémái-dns)
     - [Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS](#megoldások-a-névfeloldás-eltakarására-dns-over-https-dns-over-tls)
     - [A titkosított TLS Client Hello üzenetének sebezhetősége](#a-titkosított-tls-client-hello-üzenetének-sebezhetősége)
     - [Megoldás a Client Hello üzenet eltakarására (ECH)](#megoldás-a-client-hello-üzenet-eltakarására-ech)
@@ -53,11 +53,28 @@ Az elemzéshez a wireshark hálózati analizátort használtam.
 
 ### Az IP címről
 
+Amikor az internetre csatlakozunk, a szolgáltató ad nekünk egy címet, ami egyértelműen azonosít minket. Az előfizetésünk alapján követhetőek vagyunk, tehát ha támadást indítunk, név és cím szerint azonosíthatóak leszünk.
+
+Az IP cím kinézete:
+* IPv4 cím: 104.26.15.72 (négy számból áll)
+* IPv6 cím: 2606:4700:20::681a:f48 (hexadecimális számjegyekből áll)
+
+Az nem probléma, hogy azonosítanak minket, a kérdés, hogy mennyire látnak bele az internetes tevékenységünkbe?
+
+Az IP címünk közelítő információt is elmond a lakhelyünkről bárkinek.
+
 TBD
 
-### A titkosítás nélküli névfeloldás problémái (DNS)
+### A titkosítatlan névfeloldás problémái (DNS)
 
-TBD
+![DNS probléma](kepek/dns_problema.png)
+
+A névfeloldás azt jelenti, hogy amikor egy weboldalt megkeresünk (pl. github.org), akkor a névből IP címet állít elő egy távoli szolgáltatás (140.82.121.3) és az internetes csomagjaink erre a címre fognak elmenni. A kommunikáció titkosítatlan formában történik. Aki belehallgat a hálózati beszélgetésünkbe (lásd kép), tudni fogja, hogy milyen weblapokat látogatunk meg.
+
+Mivel az adatfolyam titkosítatlan, ezért szolgáltató képes hamis választ is visszaadni, másik kiszolgálóhoz átirányítani.
+
+Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszközzel él. A csomagjaink nem fognak eljutni a weblaphoz, hanem egy másik oldal jelenik majd meg helyette, amelyik értesít, hogy a tartalom tiltva van.
+
 
 ### Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS
 
