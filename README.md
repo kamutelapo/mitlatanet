@@ -97,23 +97,23 @@ A DNS-over-TLS vagy a DNS-over-HTTPS bekapcsolásával a szolgáltató többé n
 
 Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt (Client Hello üzenet). Amint a weboldalhoz kapcsolódunk, teljesen láthatóvá válik bárki számára, hogy kivel beszélünk. Egyetlen komoly előnye van a titkosított DNS üzenetnek, hogy nem lehet meghamisítani. A lehallgatástól nem véd meg.
 
-Képen a lehallgatott kommunikáció:
+Képen a lehallgatott kommunikáció, az alive.github.com tisztán kivehető:
 
-TBD
+![TLS probléma](kepek/tls_problema.png)
 
 ### Megoldás a Client Hello üzenet eltakarására (ECH)
 
-Természetesen a szakemberek észlelték a problémát, hogy nem előnyös, ha bárki megtudhatja, hogy milyen oldalakkal beszélgetünk, ezért megjelent az ESNI, majd később ECH megoldás. Az ECH titkosítja a Client Hello üzenetnek a problémás részét, kitakarva belőle minden értékes adatot. Az ECH opcionális, jelenleg nagyon kevés weboldal támogatja. Firefox alatt a DNS-over-HTTPS ECH-t is használ, ha lehet, de az internetes oldalak 95%-a még nem támogatja. Reméljük ez megváltozik a jövőben.
+Természetesen a szakemberek észlelték a problémát, hogy nem előnyös, ha bárki megtudhatja, hogy milyen oldalakkal beszélgetünk, ezért megjelent az ESNI, majd később ECH megoldás. Az ECH titkosítja a Client Hello üzenetnek a problémás részét, kitakarva belőle minden érzékeny adatot. Az ECH opcionális, jelenleg nagyon kevés weboldal támogatja. Firefox alatt a DNS-over-HTTPS ECH-t is használna, de az internetes oldalak 95%-a még nem támogatja. Reméljük ez megváltozik a jövőben.
 
 ### Konklúzió
 
-A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk rajta. A DNS/TLS protokollok biztonsági rései miatt viszont elvileg megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni valaki politikai hovatartozását, szokásait, érdeklődési körét névreszólóan. Elvileg tehát nem lehetetlen megoldani. Bízunk benne, hogy nem teszik meg. Általános megoldás jelenleg nincs a probléma kivédésére, az ECH bizonyos lapokat eltakarhat, de a többségük titkosítatlanul fog megérkezni.
+A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk rajta. A DNS/TLS protokollok biztonsági rései miatt viszont elvileg megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni valaki politikai hovatartozását, szokásait, érdeklődési körét névreszólóan. Elvileg tehát nem lehetetlen megoldani. Bízunk benne, hogy nem teszik meg. Általános megoldás jelenleg nincs a probléma kivédésére, az ECH bizonyos lapokat eltakarhat, de a többségük titkosítatlanul fog átmenni a rendszeren.
 
 ## Mit lát a weboldal, amihez kapcsolódunk?
 
 ### Létezik egy oldal, amely megmutatja, hogy mit lát belőlünk
 
-Ha kíváncsiak vagyunk, hogy mit lát belőlünk a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk jutnak el tőlünk hozzá.
+Ha kíváncsiak vagyunk, hogy mit lát a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk jutnak el hozzájuk.
 
 ### Helymeghatározás IP címmel
 
