@@ -5,7 +5,7 @@
     - [Az IP címről](#az-ip-címről)
     - [A titkosítatlan névfeloldás problémái (DNS)](#a-titkosítatlan-névfeloldás-problémái-dns)
     - [Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS](#megoldások-a-névfeloldás-eltakarására-dns-over-https-dns-over-tls)
-    - [A titkosított TLS Client Hello üzenetének sebezhetősége](#a-titkosított-tls-client-hello-üzenetének-sebezhetősége)
+    - [A titkosított TLS Client Hello üzenetek sebezhetősége](#a-titkosított-tls-client-hello-üzenetek-sebezhetősége)
     - [Megoldás a Client Hello üzenet eltakarására (ECH)](#megoldás-a-client-hello-üzenet-eltakarására-ech)
     - [Konklúzió](#konklúzió)
   - [Mit lát a weboldal, amihez kapcsolódunk?](#mit-lát-a-weboldal-amihez-kapcsolódunk)
@@ -80,18 +80,18 @@ Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszkö
 ### Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS
 
 A szakemberek észlelték, hogy a DNS csomagokkal komoly bajok vannak, bárki belematathat, átirányíthat, letilthat lekéréseket a szolgáltatói oldalról.
-Megjelentek megoldások a DNS forgalom eltakarására, publikus DNS tartalomszolgáltató rendszerekkel. Ezek a szolgáltatók úgy termelnek pénzt, hogy elemzik a lekéréseket, összképet kapva az internetes szokásainkról.
-Elég nekik azt megtudni, hogy X millió embert mi érdekel jelenleg, nincs szükségük rá, hogy személyre szabottan bármit megtudjanak. Sőt, pornószűrést, IP loggolás tiltását és egyéb szolgáltatásokat is biztosítanak, hogy ők elemezhessék az értékes adatainkat.
+Megjelentek megoldások a DNS forgalom eltakarására, publikus DNS névfeloldó rendszerekkel. Ezek a szolgáltatók úgy termelnek pénzt, hogy elemzik a lekéréseket, összképet kapva az internetes szokásainkról.
+Elég nekik azt megtudni, hogy X millió embert mi érdekel jelenleg, nincs szükségük rá, hogy személyre szabottan bármit megtudjanak. Sőt, pornószűrést, IP loggolás tiltását és egyéb szolgáltatásokat is biztosítanak, hogy ők férhessenek hozzá az értékes adatainkhoz.
 
 A nagyobb publikus DNS szolgáltatók közül a következőket említeném:
-* Cloudflare (1.1.1.1, a leggyorsabb, teljes névtelenséget reklámoz)
+* Cloudflare (1.1.1.1, a leggyorsabb, teljes névtelenséget ígér)
 * Google (8.8.8.8)
 
 Kép, hogy hogyan lehet Firefox alatt a DNS-over-HTTPS-t bekapcsolni Cloudflare alá (Adatvédelem és biztonság almenü).
 
 ![DNS-over-HTTPS](kepek/dns-over-https.png)
 
-### A titkosított TLS Client Hello üzenetének sebezhetősége
+### A titkosított TLS Client Hello üzenetek sebezhetősége
 
 A DNS-over-TLS vagy a DNS-over-HTTPS bekapcsolásával a szolgáltató többé nem fogja látni a DNS üzeneteinkből, hogy milyen weboldalakat olvasunk. Ezek a megoldások megvédik a DNS forgalmat.
 
