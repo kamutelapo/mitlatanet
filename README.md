@@ -20,10 +20,10 @@
     - [Süti harmadik félnek](#süti-harmadik-félnek)
     - [AMP, gyorsított mobiloldalak](#amp-gyorsított-mobiloldalak)
     - [Konklúzió](#konklúzió-2)
-- [Megoldások az információ áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
+- [Megoldások az információ-áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
   - [Reklámok és nyomkövetők blokkolása](#reklámok-és-nyomkövetők-blokkolása)
   - [A digitális ujjlenyomat meghamisítása](#a-digitális-ujjlenyomat-meghamisítása)
-  - [Megakadályozni sütik harmadik félnek történő átadását](#megakadályozni-sütik-harmadik-félnek-történő-átadását)
+  - [Sütik harmadik félnek történő átadásának blokkolása](#sütik-harmadik-félnek-történő-átadásának-blokkolása)
   - [AMP tiltása](#amp-tiltása)
 - [Úton a teljes sötétség felé](#úton-a-teljes-sötétség-felé)
   - [A TOR hálózat (dark web)](#a-tor-hálózat-dark-web)
@@ -167,7 +167,7 @@ Nem minden reklámozó követ minket, sok csak felrak egy képet és ha ráklikk
 
 ### Süti harmadik félnek
 
-TBD
+Ez a technika már kihalóban van, mert a legtöbb böngésző alapból letiltja. A dolog úgy működne, hogy belépek "A" oldalon, kapok egy sütit, amivel legközelebb jelszó nélkül is bejelentkezhetek. Egy ettől teljesen független oldal ("B") felkapja ugyanezt a sütit és elküldi a saját szerveréhez. Ugyan nem fog vele értékes adatokhoz jutni, viszont azonosításra felhasználjatja, mert pontosabb, mint a digitális ujjlenyomat. Teljesen egyedivé tesz minket.
 
 ### AMP, gyorsított mobiloldalak
 
@@ -177,7 +177,7 @@ A Google fejlesztése, hogy ahelyett, hogy egyes oldalakat a saját helyükről 
 
 Hiába nézeget az ember különféle oldalakat, ha mindegyik ugyanazokkal az ügynökségekkel áll kapcsolatban és az információáramlás iránya nagyon kevés helyre összpontosul. Egyes multinacionális cégek gyakorlatilag mindent tudni fognak rólunk.
 
-# Megoldások az információ áramlás korlátozására
+# Megoldások az információ-áramlás korlátozására
 
 TBD
 
@@ -189,7 +189,7 @@ TBD
 
 TBD
 
-## Megakadályozni sütik harmadik félnek történő átadását
+## Sütik harmadik félnek történő átadásának blokkolása
 
 TBD
 
