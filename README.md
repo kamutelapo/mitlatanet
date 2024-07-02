@@ -148,11 +148,22 @@ A túloldal látja, hogy milyen tartalmakat olvasunk és a számítógépünk, v
 
 ## Információcsere internetes weblapok között
 
-TBD
+Az internetes oldalak reklámokból és nyomkövetőkből (tracker) élnek. Amikor egy oldalt betöltünk, az oldal elirányít ügynökökhöz is minket. Ezek mindegyike képes tőlünk digitális ujjlenyomatot venni. Van, amelyik csak a reklámját helyezi el, de van olyan is, aki információt gyűjt.
+
+Azért ingyenesek ezek az újságok, mert reklámoznak, vagy pénzért információt szolgáltatnak ki rólunk, ami egy távoli pontban összekötődhet egésszé.
+
+Egy neves magyar újság nyomkövetői Firefox alatt:
+
+![Nyomkövető](kepek/koveto.png)
+
 
 ### A reklámok, nyomkövetők működése
 
-TBD
+Nem minden reklámozó követ minket, sok csak felrak egy képet és ha ráklikkelnek pénzt kap érte. A nyomkövető viszont a teljes tevékenységünket követi.
+
+Érdemes megnézni Firefox alatt, hogy milyen csomagok mennek ki, sokat nem kell magyarázni rajta, egyértelmű. (Kitakartam azokat a részeket, amikről nem tudom, hogy micsoda és akár azonosíthatnak is engem).
+
+![Analytics](kepek/analytics.png)
 
 ### Süti harmadik félnek
 
