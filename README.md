@@ -21,7 +21,7 @@
     - [AMP, gyorsított mobiloldalak](#amp-gyorsított-mobiloldalak)
     - [Konklúzió](#konklúzió-2)
 - [Megoldások az információ áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
-  - [Reklámok blokkolása](#reklámok-blokkolása)
+  - [Reklámok és nyomkövetők blokkolása](#reklámok-és-nyomkövetők-blokkolása)
   - [A digitális ujjlenyomat meghamisítása](#a-digitális-ujjlenyomat-meghamisítása)
   - [Megakadályozni sütik harmadik félnek történő átadását](#megakadályozni-sütik-harmadik-félnek-történő-átadását)
   - [AMP tiltása](#amp-tiltása)
@@ -171,17 +171,17 @@ TBD
 
 ### AMP, gyorsított mobiloldalak
 
-TBD
+A Google fejlesztése, hogy ahelyett, hogy egyes oldalakat a saját helyükről töltenénk le, a Google szervereiről is megérkezhetnek, ő optimalizálja, felgyorsítja, ezeket az oldalakat. A felhasználó azt gondolja, hogy X, vagy Y oldallal áll mobilkapcsolatban, de ha a csomagokat analizálja az ember, mind a Google irányába fog menni.
 
 ### Konklúzió
 
-TBD
+Hiába nézeget az ember különféle oldalakat, ha mindegyik ugyanazokkal az ügynökségekkel áll kapcsolatban és az információáramlás iránya nagyon kevés helyre összpontosul. Egyes multinacionális cégek gyakorlatilag mindent tudni fognak rólunk.
 
 # Megoldások az információ áramlás korlátozására
 
 TBD
 
-## Reklámok blokkolása
+## Reklámok és nyomkövetők blokkolása
 
 TBD
 
