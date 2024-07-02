@@ -137,7 +137,7 @@ Amikor a böngészőnk meglátogat egy oldalt, elküldi a kérésben, hogy milye
 
 #### Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére
 
-A javascript a böngészők programnyelve. Amikor betöltünk egy weboldalt, sokszor egy program is végrehajtódik (javascript), innentől az ujjlenyomat olvasási képességek megsokszorozódnak. Lekérdezhetjük a kijelző méretét, a telepített jelkészleteket, a 3D gyorsítókártya képességeit, a böngésző beállításait, ez egyedivé tenni minket, megkülönböztet a többi felhasználótól.
+A javascript a böngészők programnyelve. Amikor betöltünk egy weboldalt, sokszor egy program is végrehajtódik (javascript), innentől az ujjlenyomat olvasási képességek megsokszorozódnak. Lekérdezhetjük a kijelző méretét, a telepített jelkészleteket, a 3D gyorsítókártya képességeit, a böngésző beállításait, ez egyedivé tehet minket, megkülönböztetve a többi felhasználótól.
 
 A telefonokban 2D/3D hardveres gyorsítók is vannak és mindegyik egy kicsit másképp számol, de majdnem ugyanazt a képet rajzolja ki. Ezek az apró különbségek képesek a telefon, vagy a videókártya típusának egyértelmű beazonosítására.
 
