@@ -23,8 +23,9 @@
 - [Megoldások az információ-áramlás korlátozására](#megoldások-az-információ-áramlás-korlátozására)
   - [Reklámok és nyomkövetők blokkolása](#reklámok-és-nyomkövetők-blokkolása)
   - [A digitális ujjlenyomat meghamisítása](#a-digitális-ujjlenyomat-meghamisítása)
-  - [Sütik harmadik félnek történő átadásának blokkolása](#sütik-harmadik-félnek-történő-átadásának-blokkolása)
-  - [AMP tiltása](#amp-tiltása)
+  - [AMP tiltása (gyorsított mobiloldalak)](#amp-tiltása-gyorsított-mobiloldalak)
+  - [Javascript (böngésző-program) tiltása](#javascript-böngésző-program-tiltása)
+  - [Konklúzió](#konklúzió-3)
 - [Úton a teljes sötétség felé](#úton-a-teljes-sötétség-felé)
   - [A TOR hálózat (dark web)](#a-tor-hálózat-dark-web)
     - [A hálózat működése](#a-hálózat-működése)
@@ -42,7 +43,7 @@
   - [www.facebook.com](#wwwfacebookcom)
   - [www.cloudflare.com](#wwwcloudflarecom)
   - [Hogyan használhatunk névtelenül szkripteket is?](#hogyan-használhatunk-névtelenül-szkripteket-is)
-  - [Konklúzió](#konklúzió-3)
+  - [Konklúzió](#konklúzió-4)
 
 
 # Mit árul el rólunk az internet?
@@ -199,15 +200,45 @@ A lekapcsolt oldalak:
 
 ## A digitális ujjlenyomat meghamisítása
 
-TBD
+Ezt a funkciót a böngészőben lehet bekapcsolni (Beállítások/Pajzsok):
 
-## Sütik harmadik félnek történő átadásának blokkolása
+![Ujjlenyomat tiltása](kepek/ujjlenyomat_tilt.png)
 
-TBD
 
-## AMP tiltása
+Az ujjlenyomatot sokféleképpen le lehet venni, az egyik megoldás, hogy kirajzolunk egy szöveget és a létrehozott képpontokból kiszámolunk egy értéket. A lenti képen zölden látszik a létrehozott szöveg. Ez lesz az ujjlenyomatunk (canvas fingerprint). Minden böngésző másképpen rajzol, ez szemmel ritkán látható, sőt, ha átírják a programot, előfordulhat, hogy másképpen fog kerekíteni és ez a rajzolásnál apró eltéréseket eredményezhet, megváltozhat az ujjlenyomatunk.
 
-TBD
+![Ujjlenyomat1](kepek/ujjlenyomat1.png)
+
+
+Indítsuk újra a Brave böngészőt, bár szemmel nem lesz észrevehető, de más képet rajzol meg, ami más ujjlenyomatot eredményez.
+
+![Ujjlenyomat2](kepek/ujjlenyomat2.png)
+
+Hogyan lehet ezt megoldani? Egy lehetséges megoldás, ha 0,1 pixellel eltoljuk vagy a szöveget, vagy a narancssárga négyszöget, ez szemmel látható változást nem fog eredményezni, viszont a létrehozott kép már teljesen más lesz.
+
+A véletlenszerű variálással folyamatosan cserélődhet az ujjlenyomatunk. Ha tiltjuk a reklámokat és összezavarjuk az ujjlenyomatunkat, az már biztosíthat valódi védelmet a magánéletünk számára.
+
+
+## AMP tiltása (gyorsított mobiloldalak)
+
+Beállítások, adatvédelem és biztonság menu:
+
+![AMP tiltása](kepek/amp_tilt.png)
+
+Amikor a Brave böngésző AMP URL-t észlel, megpróbálja átirányítani az eredeti helyre, hogy ne működjön (ezt de-AMP-nek is hívják, mert kiszedi az oldalból ezeket a hivatkozásokat).
+
+## Javascript (böngésző-program) tiltása
+
+Amennyiben a böngésző nem futtathat programokat, úgy ujjlenyomat sem lesz. A tiltás egy nagyon drasztikus megoldás, viszont ha nem fut program, nem lesz ujjlenyomat sem.
+A magyar fordítás elég gázosra sikeredett (Beállítások/Pajzsok): "Parancsfájlok letiltása" menü alatt szerepel.
+
+![Böngésző-programok tiltása](kepek/no_javascript.png)
+
+
+## Konklúzió
+
+Sokmindent megpróbálhatunk, hogy eltakarjuk az ujjlenyomatunkat, folyamatos a verseny az ügynökségek és a böngészőgyártók között. A ügynökök ellenőrizni akarnak mindent, a böngészőgyártók meg kibújnak. Mindig lehet olyan pillanat, hogy a reklámügynökség képes leszedni az ujjlenyomatunkat és beazonosítani mindket, de rendszerint a következő böngészőverzió ezt javíthatja. Éppen ezért nem lehet teljesen megbízni a hamisított ujjlenyomatban sem.
+Egyedül a javascript (böngésző programok) tiltása biztosít 100%-os megoldást.
 
 # Úton a teljes sötétség felé
 
