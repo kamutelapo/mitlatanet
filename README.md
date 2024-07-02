@@ -10,7 +10,7 @@
     - [Konklúzió](#konklúzió)
   - [Mit lát a weboldal, amihez kapcsolódunk?](#mit-lát-a-weboldal-amihez-kapcsolódunk)
     - [Létezik egy oldal, amely megmutatja, hogy mit lát belőlünk](#létezik-egy-oldal-amely-megmutatja-hogy-mit-lát-belőlünk)
-    - [Helymeghatározás IP címmel](#helymeghatározás-ip-címmel)
+    - [Helymeghatározás IP cím alapján](#helymeghatározás-ip-cím-alapján)
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
       - [Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére](#javascript-futtatható-kód-felhasználása-a-számítógépünk-telefonunk-képességeinek-felderítésére)
@@ -119,7 +119,7 @@ A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem l�
 
 Ha kíváncsiak vagyunk, hogy mit lát a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk jutnak el hozzájuk.
 
-### Helymeghatározás IP címmel
+### Helymeghatározás IP cím alapján
 
 Az IP címünk a túloldal számára közelítőleg megjelöli, hogy hol vagyunk. Ezt külföldi cikkek úgy fogalmazzák meg, hogy a régiót eltalálja.
 
