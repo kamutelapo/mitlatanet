@@ -126,19 +126,25 @@ Az IP címünk a túloldal számára közelítőleg megjelöli, hogy hol vagyunk
 
 ### Digitális ujjlenyomatok
 
-TBD
+A valós életben amikor megfogunk egy tárgyat az ujjlenyomatunk a tárgyon marad és ez annyira egyedi, hogy azonosít minket. Ugyanez történik, amikor egy lekérést kiküldünk egy weboldalhoz. Elküldjük az operációs rendszert, az IP címet, a böngésző típusát, verziószámát, a nyelvet, a kijelző méretét, telepített bővétményeket, jelkészleteket és ezer más tulajdonságot is. Annyi adatot, hogy az már azonosít minket.
 
 #### A HTTPS kérés értékes mezői
 
-TBD
+Amikor a böngészőnk meglátogat egy oldalt, elküldi a kérésben, hogy milyen böngészőt használunk, ennek verziószámát, az operációs rendszert, meg hogy milyen nyelveken szeretünk olvasni. Nagyon sok adat kikerül, de ez még hiányos a teljes beazonosításhoz.
+
+![HTTPS mezők](kepek/https_mezok.png)
 
 #### Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére
 
-TBD
+A javascript a böngészők programnyelve. Amikor betöltünk egy weboldalt, sokszor egy program is végrehajtódik (javascript), innentől az ujjlenyomat olvasási képességek megsokszorozódnak. Lekérdezhetjük a kijelző méretét, a telepített jelkészleteket, a 3D gyorsítókártya képességeit, a böngésző beállításait, ez egyedivé tenni minket, megkülönböztet a többi felhasználótól.
+
+A telefonokban 2D/3D hardveres gyorsítók is vannak és mindegyik egy kicsit másképp számol, de majdnem ugyanazt a képet rajzolja ki. Ezek az apró különbségek képesek a telefon, videókártya típusának egyértelmű beazonosítására.
+
+![WEBGL](kepek/webgl.png)
 
 ### Konklúzió
 
-TBD
+A túloldal látja, hogy milyen tartalmakat olvasunk és a számítógépünk, vagy telefonunk egyediségét kihasználva (ujjlenyomat) képes lehet bejelentkezés nélkül is azonosítani minket. Ha később kiderülne a személyazonosságunk (pl. fizetés), az ujjlenyomatunkat akár teljes névvel és címmel is összeköthetik.
 
 ## Információcsere internetes weblapok között
 
