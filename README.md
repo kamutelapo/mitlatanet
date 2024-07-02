@@ -194,7 +194,7 @@ Reklámok blokkolása a Brave böngészőben (Beállítások/Pajzsok):
 ![Blokkolás](kepek/tracker_blokk.png)
 
 
-A lekapcsolt oldalak:
+A lekapcsolt ügynökök:
 
 ![Lekapcsolva](kepek/blokkolva.png)
 
@@ -204,8 +204,7 @@ Ezt a funkciót a böngészőben lehet bekapcsolni (Beállítások/Pajzsok):
 
 ![Ujjlenyomat tiltása](kepek/ujjlenyomat_tilt.png)
 
-
-Az ujjlenyomatot sokféleképpen le lehet venni, az egyik megoldás, hogy kirajzolunk egy szöveget és a létrehozott képpontokból kiszámolunk egy értéket. A lenti képen zölden látszik a létrehozott szöveg. Ez lesz az ujjlenyomatunk (canvas fingerprint). Minden böngésző másképpen rajzol, ez szemmel ritkán látható, sőt, ha átírják a programot, előfordulhat, hogy másképpen fog kerekíteni és ez a rajzolásnál apró eltéréseket eredményezhet, megváltozhat az ujjlenyomatunk.
+Az ujjlenyomatot sokféleképpen le lehet venni, az egyik megoldás, hogy kirajzolunk egy szöveget és a létrehozott képpontokból kiszámolunk egy értéket. A lenti képen zölden látszik a létrehozott szöveg. Ez lesz az ujjlenyomatunk (canvas fingerprint). Minden böngésző másképpen rajzol, ez szemmel ritkán látható. Sőt, az is előfordulhat, hogy ha átírják a programot az újabb verziónál kerekítési pontatlanságok miatt megváltozik az ujjlenyomatunk is.
 
 ![Ujjlenyomat1](kepek/ujjlenyomat1.png)
 
@@ -225,19 +224,20 @@ Beállítások, adatvédelem és biztonság menu:
 
 ![AMP tiltása](kepek/amp_tilt.png)
 
-Amikor a Brave böngésző AMP URL-t észlel, megpróbálja átirányítani az eredeti helyre, hogy ne működjön (ezt de-AMP-nek is hívják, mert kiszedi az oldalból ezeket a hivatkozásokat).
+Amikor a Brave böngésző AMP URL-t észlel, megpróbálja átirányítani az eredeti helyre, hogy ne a Google szerverein keresztül működjön (ezt de-AMP-nek is hívják, mert átszerkeszti az oldalt, hogy eltűnjenek abból a Google hivatkozások).
 
 ## Javascript (böngésző-program) tiltása
 
-Amennyiben a böngésző nem futtathat programokat, úgy ujjlenyomat sem lesz. A tiltás egy nagyon drasztikus megoldás, viszont ha nem fut program, nem lesz ujjlenyomat sem.
-A magyar fordítás elég gázosra sikeredett (Beállítások/Pajzsok): "Parancsfájlok letiltása" menü alatt szerepel.
+Amennyiben a böngésző nem futtathat programokat, úgy ujjlenyomat sem lesz. A tiltás egy nagyon drasztikus megoldás, viszont 100%-os hatékonyságú megoldást biztosít.
+
+A Brave magyar fordítása elég gázosra sikeredett: "Parancsfájlok letiltása", mely a Beállítások/Pajzsok menü alatt szerepel.
 
 ![Böngésző-programok tiltása](kepek/no_javascript.png)
 
 
 ## Konklúzió
 
-Sokmindent megpróbálhatunk, hogy eltakarjuk az ujjlenyomatunkat, folyamatos a verseny az ügynökségek és a böngészőgyártók között. A ügynökök ellenőrizni akarnak mindent, a böngészőgyártók meg kibújnak. Mindig lehet olyan pillanat, hogy a reklámügynökség képes leszedni az ujjlenyomatunkat és beazonosítani mindket, de rendszerint a következő böngészőverzió ezt javíthatja. Éppen ezért nem lehet teljesen megbízni a hamisított ujjlenyomatban sem.
+Sokmindent megpróbálhatunk, hogy eltakarjuk az ujjlenyomatunkat, folyamatos a verseny az ügynökségek és a böngészőgyártók között. A ügynökök ellenőrizni akarnak mindent, a böngészőgyártók meg kibújnak. Mindig lehet olyan pillanat, hogy a reklámügynökség képes leszedni az ujjlenyomatunkat és beazonosítani minket, de rendszerint a következő böngészőverzió ezt javíthatja. Éppen ezért nem lehet teljesen megbízni a hamisított ujjlenyomatban sem.
 Egyedül a javascript (böngésző programok) tiltása biztosít 100%-os megoldást.
 
 # Úton a teljes sötétség felé
