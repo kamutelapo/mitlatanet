@@ -185,7 +185,17 @@ Ebben a fejezetben a Brave böngészőt fogom használni, mert ez a böngésző 
 
 ## Reklámok és nyomkövetők blokkolása
 
-TBD
+A reklámok és nyomkövetők blokkolása szükséges, de nem elégséges lépés a magánélet védelméhez. Ez a lépés kizárólag abban segít, hogy gyorsabban töltődjenek be az oldalak és ne legyenek villogó reklámok.
+Ugyanakkor ha az oldal szeretné, maga is továbbküldheti a digitális ujjlenyomatunkat a reklámügynökségnek, akitől a pénzt kapja. Egyáltalán nem lehetetlen, hogy az ügynökséghez eljussanak az adataink, sőt, ilyenkor azt is láthatja, hogy blokkoljuk a reklámokat. Semmiféle védelmet nem nyújt önmagában a blokkolás.
+
+Reklámok blokkolása a Brave böngészőben (Beállítások/Pajzsok):
+
+![Blokkolás](kepek/tracker_blokk.png)
+
+
+A lekapcsolt oldalak:
+
+![Lekapcsolva](kepek/blokkolva.png)
 
 ## A digitális ujjlenyomat meghamisítása
 
