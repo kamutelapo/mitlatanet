@@ -179,7 +179,9 @@ Hiába nézeget az ember különféle oldalakat, ha mindegyik ugyanazokkal az ü
 
 # Megoldások az információ-áramlás korlátozására
 
-TBD
+Ebben a fejezetben a Brave böngészőt fogom használni, mert ez a böngésző támogatja a legjobban a magánélet védelmét.
+
+![Brave böngésző](kepek/brave_browser.jpg)
 
 ## Reklámok és nyomkövetők blokkolása
 
