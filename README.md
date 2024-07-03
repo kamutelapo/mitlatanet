@@ -33,6 +33,7 @@
     - [A TOR böngésző telepítésének menete](#a-tor-böngésző-telepítésének-menete)
     - [A nyelv átállítása](#a-nyelv-átállítása)
     - [Szkriptek (futtatható kód) tiltása](#szkriptek-futtatható-kód-tiltása)
+    - [Semmilyen bővítményt ne telepíts, minimális dolgon változtass](#semmilyen-bővítményt-ne-telepíts-minimális-dolgon-változtass)
     - [Ennyit lát a túloldal](#ennyit-lát-a-túloldal)
     - [Mi történik a TLS Client Hello-val?](#mi-történik-a-tls-client-hello-val)
     - [Az onion címek](#az-onion-címek)
@@ -252,7 +253,7 @@ TBD
 
 ### Legális-e a használata?
 
-Vannak országok, ahol tiltják a TOR hálózatot (az erős cenzúra miatt), viszont Magyarországon jelenleg szabad használni. Vannak KFT-k is, amelyek tor végpontokat üzemeltetnek.
+Vannak országok, ahol tiltják a TOR hálózatot (ahol erős a cenzúra), viszont Magyarországon jelenleg szabad használni. Vannak KFT-k is, amelyek tor végpontokat üzemeltetnek.
 
 ### A TOR böngésző telepítésének menete
 
@@ -309,11 +310,19 @@ A "good signature" jelenti azt, hogy sikerült az ellenőrzés. Azt töltöttük
 
 ### A nyelv átállítása
 
-TBD
+Kis ország vagyunk, kevés TOR felhasználóval. Ha alapértelmezetten magyar nyelven kérsz le weboldalt, azonnal elveszíted az anonimitásodat. Kevés emberből könnyű megtalálni a forrást.
+
+![Angol nyelv](kepek/tor_nyelv.png)
 
 ### Szkriptek (futtatható kód) tiltása
 
-TBD
+Amennyiben a javascript engedélyezve van, bárki ujjlenyomatot vehet tőled TOR böngésző alatt is. Tiltsd le:
+
+![Biztonság](kepek/tor_biztonsag.png)
+
+### Semmilyen bővítményt ne telepíts, minimális dolgon változtass
+
+Sok bővítmény kiskapuként is szolgálhat, ha átküldi a túloldalra az IP címedet, rögtön azonosíthatóvá válsz.
 
 ### Ennyit lát a túloldal
 
