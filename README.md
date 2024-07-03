@@ -344,7 +344,7 @@ Semmilyen értelmes információ  nem olvasható ki belőle. Valami tor bejárat
 A tor hálózatnak saját címzése is van, ami nem is hasonlít a jól megszokott DNS-re. Leginkább össze-vissza karakterekből áll. A két pont kiválaszt magának egy köztes találkozóhelyet egy tor csomópontban, ahol információt cserélhetnek. A kiszolgáló nem fogja ismerni az ügyfelet, az ügyfél sem a kiszolgálót, minden titokban fog maradni.
 
 A brave kereső onion címe:
-[https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/]([https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6](https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/))
+[https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/](https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/)
 
 ### Biztonságos-e a TOR?
 
