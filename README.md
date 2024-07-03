@@ -248,7 +248,7 @@ Egyedül a javascript (böngésző programok) tiltása biztosít 100%-os megold�
 ## A TOR hálózat (dark web)
 
 1990-re világossá váltak az internetes rendszerek problémái, ezért az amerikai haditengerészet megbízta David Goldschlag-ot, Mike Reed-et és Paul Syverson-t, hogy vizsgálják ki, hogy lehetséges-e anonim módon kommunikálni a jelenlegi internetes hálózatokon. Ők készítették el először az onion routing alapkoncepcióját és prototípusát 1995-ben. Ebből nőtt ki a később a TOR hálózat.
-A TOR nyílt forrású hálózat, folyamatos fejlesztés alatt áll. Bárki megnézheti a kódják, ellenőrizheti, hogy megfelelően működik-e, fordíthat belőle saját példányt, ha nem bízik a rendelkezésünkre bocsájtott programokban.
+A TOR nyílt forrású hálózat, folyamatos fejlesztés alatt áll. Bárki megnézheti a kódját, ellenőrizheti, hogy megfelelően működik-e, fordíthat belőle saját példányt, ha nem bízik a rendelkezésünkre bocsájtott programokban.
 
 ### A hálózat működése
 
