@@ -86,7 +86,7 @@ Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszkö
 
 ### Megoldások a névfeloldás eltakarására: DNS-over-HTTPS, DNS-over-TLS
 
-A szakemberek észlelték, hogy a DNS csomagokkal komoly bajok lehetnek, bárki belematathat, átirányíthat, letilthat lekéréseket, ezért biztonságosabb, ha azok is titkosított csatornán haladnak.
+A szakemberek észlelték, hogy a névfeloldásért felelős DNS csomagokkal komoly bajok lehetnek, bárki belematathat, átirányíthat, letilthat lekéréseket, ezért biztonságosabb, ha azok is titkosított csatornán haladnak.
 Megjelentek megoldások a DNS forgalom eltakarására publikus DNS névfeloldó rendszerekkel. Ezek a szolgáltatók úgy termelnek pénzt, hogy elemzik a lekéréseket, összképet kapva az internetes szokásainkról.
 Elég nekik azt tudni, hogy X millió embert mi érdekel, nincs szükségük a személyes adatainkra. Némelyik szolgáltató pornószűrést, anonimitást és egyéb extra szolgáltatást is biztosít, hogy nekik szolgáltassuk az adatainkat.
 
@@ -100,12 +100,12 @@ Firefox alatt így lehet a DNS-over-HTTPS-t bekapcsolni Cloudflare alá (Adatvé
 
 ### A titkosított TLS Client Hello üzenetek sebezhetősége
 
-A DNS-over-TLS vagy a DNS-over-HTTPS bekapcsolásával a szolgáltató többé nem fogja látni a DNS üzeneteinkből, hogy milyen weboldalakat olvasunk. Ezek a megoldások megvédik a DNS forgalmat.
+A DNS-over-TLS vagy a DNS-over-HTTPS bekapcsolásával a szolgáltató többé nem fogja látni a DNS üzeneteinkből, hogy milyen weboldalakat olvasunk. Ezek a megoldások megvédik a névfeloldásért felelős DNS forgalmat.
 
-Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt (Client Hello üzenet, a TLS az internet titkosításért felelős rétege).
-Amint a weboldalhoz kapcsolódunk, teljesen láthatóvá válik bárki számára, hogy kivel beszélünk. A lehallgatástól nem véd meg a titkosított DNS, viszont az üzenetet többé már nem lehet meghamisítani, csak tiltani.
+Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt. A TLS az internet titkosításért felelős rétege (Transport Layer Security), ennek a Client Hello üzenetében kódolatlanul, szövegesen utazik a meglátogatandó webhely neve.
+Amint a weboldalhoz kapcsolódunk, teljesen láthatóvá válik bárki számára, hogy kivel beszélünk. A lehallgatástól tehát nem véd meg a titkosított DNS, viszont a választ többé már nem lehet meghamisítani, csak letiltani.
 
-Az alábbi képen a lehallgatott kommunikációban az "alive.github.com" tisztán kivehető:
+Az alábbi képen a titkosított(!) kommunikációt lehallgatva az "alive.github.com" tisztán kivehető:
 
 ![TLS probléma](kepek/tls_problema.png)
 
