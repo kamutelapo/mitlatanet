@@ -253,7 +253,37 @@ A TOR nyílt forrású hálózat, folyamatos fejlesztés alatt áll. Bárki megn
 
 ### A hálózat működése
 
-TBD
+![A tor hálózat működése](kepek/how-tor-works.png)
+
+A működés egyszerűen:
+
+* kiválasztunk 3 csomópontot véletlenszerűen, lehetőleg 3 különböző országból (ezt automatikusan megcsinálja a rendszer)
+* az adatokat 3 kulccsal titkosítjuk
+  * először a 3. csomópont (kijárat) publikus kulcsával
+  * utána a 2. csomópont (relé) publikus kulcsával
+  * utána az 1. csomópont (bejárat) publikus kulcsával
+* elküldjük a csomagot az első csomóponthoz
+  * ő leveszi az első titkosítást a saját privát kulcsával (1.)
+  * ő tudja, hogy honnan jött az üzenet
+  * de nem tudja dekódolni, mert 2 privát kulcs még hiányzik neki
+  * továbbküldi a második csomópontnak
+* megérkezik a második csomóponthoz
+  * ő leveszi a titkosítást a saját privát kulcsával (2.)
+  * nem tudja, hogy honnan jött az üzenet, csak az előző csomópontot ismeri
+  * nem tudja dekódolni sem, mert hiányzik neki még egy privát kulcs
+  * továbbküldi a következő csomópontnak
+* megérkezik a harmadik csomóponthoz
+  * ő leveszi az utolsó titkosítást is a saját privát kulcsával (3.)
+  * ekkor az üzenet már olvasható
+  * viszont a 3 csomópontból csak az utolsót ismeri, senki mást
+  * tippelni sem tudja, hogy honnan jött az üzenet
+  * továbbküldi a kiszolgáló felé
+
+A 3 kulcsos működés során a gépek csak az előző és az utánuk lévő csomópontokat ismerik, a többi adat titkosítva van, több ezer év lenne visszafejteni.
+
+Mikor lehetne dekódolni? Ha mind a 3 csomópont ugyanannak a szervezetnek a kezében lenne.
+
+Szerencsére nagyon sok magánember is biztosít TOR bejáratot, relét és kijáratot, ezért kicsi a valószínűsége, hogy mind a 3 csomópontot ugyanaz birtokolja.
 
 ### Legális-e a használata?
 
