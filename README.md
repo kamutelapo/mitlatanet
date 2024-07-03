@@ -37,7 +37,7 @@
     - [Ennyit lát a túloldal](#ennyit-lát-a-túloldal)
     - [Mi történik a TLS Client Hello-val?](#mi-történik-a-tls-client-hello-val)
     - [Az onion címek](#az-onion-címek)
-- [Hogyan viszonyulnak az egyes szolgáltatók a névtelenséghez?](#hogyan-viszonyulnak-az-egyes-szolgáltatók-a-névtelenséghez)
+- [Hogyan viszonyulnak az egyes kiszolgálók a névtelenséghez?](#hogyan-viszonyulnak-az-egyes-kiszolgálók-a-névtelenséghez)
   - [www.google.com](#wwwgooglecom)
   - [www.duckduckgo.com](#wwwduckduckgocom)
   - [www.brave.com](#wwwbravecom)
@@ -326,19 +326,21 @@ Sok bővítmény kiskapuként is szolgálhat, ha átküldi a túloldalra az IP c
 
 ### Ennyit lát a túloldal
 
-TBD
+Valahol Bécsben vagyok. :)
+
+![TOR Túloldal](kepek/tor_tuloldal.png)
 
 ### Mi történik a TLS Client Hello-val?
 
-TBD
+Semmilyen értelmes információ  nem olvasható ki belőle. Valami tor bejárati csomóponthoz kapcsolódunk.
+
+![TOR ClientHello](kepek/tor_clienthello.png)
 
 ### Az onion címek
 
 TBD
 
-# Hogyan viszonyulnak az egyes szolgáltatók a névtelenséghez?
-
-TBD
+# Hogyan viszonyulnak az egyes kiszolgálók a névtelenséghez?
 
 ## www.google.com
 
