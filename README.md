@@ -37,6 +37,8 @@
     - [Ennyit lát a túloldal](#ennyit-lát-a-túloldal)
     - [Mi történik a TLS Client Hello-val?](#mi-történik-a-tls-client-hello-val)
     - [Az onion címek](#az-onion-címek)
+    - [Biztonságos-e a TOR?](#biztonságos-e-a-tor)
+    - [Konklúzió](#konklúzió-4)
 - [Hogyan viszonyulnak az egyes kiszolgálók a névtelenséghez?](#hogyan-viszonyulnak-az-egyes-kiszolgálók-a-névtelenséghez)
   - [www.google.com](#wwwgooglecom)
   - [www.duckduckgo.com](#wwwduckduckgocom)
@@ -44,7 +46,7 @@
   - [www.facebook.com](#wwwfacebookcom)
   - [www.cloudflare.com](#wwwcloudflarecom)
   - [Hogyan használhatunk névtelenül szkripteket is?](#hogyan-használhatunk-névtelenül-szkripteket-is)
-  - [Konklúzió](#konklúzió-4)
+  - [Konklúzió](#konklúzió-5)
 
 
 # Mit árul el rólunk az internet?
@@ -337,6 +339,14 @@ Semmilyen értelmes információ  nem olvasható ki belőle. Valami tor bejárat
 ![TOR ClientHello](kepek/tor_clienthello.png)
 
 ### Az onion címek
+
+TBD
+
+### Biztonságos-e a TOR?
+
+Legalább annyira, mint egy kivilágítatlan városban sétálni az utcán a sötét éjszakában. Sosem tudhatod, hogy ki van a túloldalon és milyen szándékkal közeledik feléd. Alapszabály a TOR hálózatokon, hogy senkiben nem lehet megbízni. A jelenlegi internettel vannak komoly problémák, de egy TOR hálózat a maga ellenőrizetlensége miatt rémálommá válhat. Fel kell tenni a kérdést, hogy mi a rosszabb: ha megfigyelnek, vagy ha megszűnik a törvény ereje?
+
+### Konklúzió
 
 TBD
 
