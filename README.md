@@ -242,8 +242,6 @@ Egyedül a javascript (böngésző programok) tiltása biztosít 100%-os megold�
 
 # Úton a teljes sötétség felé
 
-TBD
-
 ## A TOR hálózat (dark web)
 
 TBD
@@ -254,11 +252,60 @@ TBD
 
 ### Legális-e a használata?
 
-TBD
+Vannak országok, ahol tiltják a TOR hálózatot (az erős cenzúra miatt), viszont Magyarországon jelenleg szabad használni. Vannak KFT-k is, amelyek tor végpontokat üzemeltetnek.
 
 ### A TOR böngésző telepítésének menete
 
-TBD
+Amennyiben anonimitást szeretnénk, minimalizálni kell azoknak számát, akiben megbízunk. Teljes anonimitás nincs, de ha kevés a szereplő a történetben, akár szerencsénk is lehet. A TOR böngészőt kizárólag a hivatalos oldalukról érdemes telepíteni a [https://www.torproject.org](https://www.torproject.org)-ról.
+
+Linux alatt mutatom be ennek a menetét:
+
+* először letöltjük a böngészőt
+* utána letöltjük az aláírás fájlt
+* utána ellenőrizzük, hogy az aláírás stimmel-e
+
+
+Az ellenőrzés menete:
+
+```
+gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+```
+
+
+Erre a következő választ kaphatjuk:
+
+```
+gpg: key 4E2C6E8793298290: "Tor Browser Developers (signing key) <torbrowser@torproject.org>" not changed
+gpg: Összesen feldolgoztam: 1
+gpg:              változatlan: 1
+pub   rsa4096 2014-12-15 [C] [expires: 2025-07-21]
+      EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+uid           [ unknown] Tor Browser Developers (signing key) <torbrowser@torproject.org>
+sub   rsa4096 2021-09-17 [S] [expires: 2024-08-23]
+```
+
+A kulcsot beleírjuk egy fájlba:
+
+```
+gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+```
+
+Utána leellenőrizzük vele a letöltést:
+
+```
+gpgv --keyring ./tor.keyring ~/Downloads/tor-browser-linux-x86_64-13.5.tar.xz.asc ~/Downloads/tor-browser-linux-x86_64-13.5.tar.xz
+```
+
+Eredmény:
+
+```
+gpgv: Signature made 2024. jún. 20., csütörtök, 20:06:55 CEST
+gpgv:                using RSA key 613188FC5BE2176E3ED54901E53D989A9E2D47BF
+gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torproject.org>"
+```
+
+A "good signature" jelenti azt, hogy sikerült az ellenőrzés. Azt töltöttük le, amit a weboldal adott nekünk. Ezután kedvünkre telepíthetjük. Elsőre kissé macerásnak tűnhet, de ellenőrizetlen forrásból nem érdemes letölteni, mert egy csomó kézen átmehet és fogalmunk sem lesz róla, ki milyen kiskaput rak bele. Semmilyen biztonságot nem nyújtanak a nagy szoftveráruházból telepített példányok.
+
 
 ### A nyelv átállítása
 
