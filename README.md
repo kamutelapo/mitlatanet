@@ -88,7 +88,7 @@ Amikor az állam letiltja a tiltotttartalom.com weboldalt, akkor ezzel az eszkö
 
 A szakemberek észlelték, hogy a DNS csomagokkal komoly bajok lehetnek, bárki belematathat, átirányíthat, letilthat lekéréseket, ezért biztonságosabb, ha azok is titkosított csatornán haladnak.
 Megjelentek megoldások a DNS forgalom eltakarására publikus DNS névfeloldó rendszerekkel. Ezek a szolgáltatók úgy termelnek pénzt, hogy elemzik a lekéréseket, összképet kapva az internetes szokásainkról.
-Elég nekik azt tudni, hogy X millió embert mi érdekel, nincs szükségük a személyes adatainkra. Némelyik szolgáltató pornószűrést, anonimitást és egyéb extra szolgáltatást is biztosít, hogy nekik szolgáltassunk az adatainkat.
+Elég nekik azt tudni, hogy X millió embert mi érdekel, nincs szükségük a személyes adatainkra. Némelyik szolgáltató pornószűrést, anonimitást és egyéb extra szolgáltatást is biztosít, hogy nekik szolgáltassuk az adatainkat.
 
 A nagyobb publikus DNS szolgáltatók közül a következőket említeném:
 * Cloudflare (1.1.1.1, a leggyorsabb, teljes névtelenséget ígér)
