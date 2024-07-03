@@ -250,10 +250,13 @@ Egyedül a javascript (böngésző programok) tiltása biztosít 100%-os megold�
 
 1990-re világossá váltak az internetes rendszerek problémái, ezért az amerikai haditengerészet megbízta David Goldschlag-ot, Mike Reed-et és Paul Syverson-t, hogy vizsgálják ki, hogy lehetséges-e anonim módon kommunikálni a jelenlegi internetes hálózatokon. Ők készítették el először az onion routing alapkoncepcióját és prototípusát 1995-ben. Ebből nőtt ki a később a TOR hálózat.
 A TOR nyílt forrású hálózat, folyamatos fejlesztés alatt áll. Bárki megnézheti a kódját, ellenőrizheti, hogy megfelelően működik-e, fordíthat belőle saját példányt, ha nem bízik a rendelkezésünkre bocsájtott programokban.
+Jelenleg is használják a TOR hálózatot, amikor adatokat próbálnak kicsempészni bizonyos országokból.
 
 ### A hálózat működése
 
-![A tor hálózat működése](kepek/how-tor-works.png)
+![A TOR hálózat működése](kepek/how-tor-works.png)
+
+A TOR hálózattal az IP címünket rejthetjük el némi trükközés segítségével.
 
 A működés egyszerűen:
 
@@ -279,7 +282,7 @@ A működés egyszerűen:
   * tippelni sem tudja, hogy honnan jött az üzenet
   * továbbküldi a kiszolgáló felé
 
-A 3 kulcsos működés során a gépek csak az előző és az utánuk lévő csomópontokat ismerik, a többi adat titkosítva van, több ezer év lenne visszafejteni.
+Emiatt a működés miatt hívják hagyma rendszereknek, mert becsomagolják az adatot titkosítási rétegekkel. Minden csomópont leválaszt egy levelet a hagymáról. A gépek csak az előző és az utánuk lévő csomópontokat ismerik, a többi adat titkosítva van, több ezer év lenne visszafejteni.
 
 Mikor lehetne dekódolni? Ha mind a 3 csomópont ugyanannak a szervezetnek a kezében lenne.
 
