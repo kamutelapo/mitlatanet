@@ -172,7 +172,7 @@ Nem minden reklámozó követ minket, sok csak felrak egy képet és ha ráklikk
 
 ### Süti harmadik félnek
 
-Ez a technika már kihalóban van, mert a legtöbb böngésző alapból letiltja. A dolog úgy működne, hogy belépek "A" oldalon, kapok egy sütit, amivel legközelebb jelszó nélkül is bejelentkezhetek. Egy ettől teljesen független oldal ("B") felkapja ugyanezt a sütit és elküldi a saját szerveréhez. Ugyan nem fog vele értékes adatokhoz jutni, viszont azonosításra felhasználjatja, mert pontosabb, mint a digitális ujjlenyomat. Teljesen egyedivé tesz minket.
+Ez a technika már kihalóban van, mert a legtöbb böngésző alapból letiltja. A dolog úgy működne, hogy belépek "A" oldalon, kapok egy sütit, amivel legközelebb jelszó nélkül is bejelentkezhetek. Egy ettől teljesen független oldal ("B") felkapja ugyanezt a sütit és elküldi a saját szerveréhez. Ugyan nem fog vele értékes adatokhoz jutni, viszont azonosításra felhasználhatja, mert pontosabb, mint a digitális ujjlenyomat. Teljesen egyedivé tesz minket.
 
 ### AMP, gyorsított mobiloldalak
 
