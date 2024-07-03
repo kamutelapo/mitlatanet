@@ -9,7 +9,7 @@
     - [Megoldás a Client Hello üzenet eltakarására (ECH)](#megoldás-a-client-hello-üzenet-eltakarására-ech)
     - [Konklúzió](#konklúzió)
   - [Mit lát a weboldal, amihez kapcsolódunk?](#mit-lát-a-weboldal-amihez-kapcsolódunk)
-    - [Létezik egy oldal, amely megmutatja, hogy mit lát belőlünk](#létezik-egy-oldal-amely-megmutatja-hogy-mit-lát-belőlünk)
+    - [Létezik egy oldal, amely megmutatja, hogy mit látnak belőlünk a túloldalon](#létezik-egy-oldal-amely-megmutatja-hogy-mit-látnak-belőlünk-a-túloldalon)
     - [Helymeghatározás IP cím alapján](#helymeghatározás-ip-cím-alapján)
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
@@ -119,9 +119,9 @@ A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem l�
 
 ## Mit lát a weboldal, amihez kapcsolódunk?
 
-### Létezik egy oldal, amely megmutatja, hogy mit lát belőlünk
+### Létezik egy oldal, amely megmutatja, hogy mit látnak belőlünk a túloldalon
 
-Ha kíváncsiak vagyunk, hogy mit lát a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk jutnak el hozzájuk.
+Ha kíváncsiak vagyunk, hogy mit lát a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk szivárognak át hozzájuk.
 
 ### Helymeghatározás IP cím alapján
 
