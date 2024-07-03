@@ -102,9 +102,10 @@ Firefox alatt így lehet a DNS-over-HTTPS-t bekapcsolni Cloudflare alá (Adatvé
 
 A DNS-over-TLS vagy a DNS-over-HTTPS bekapcsolásával a szolgáltató többé nem fogja látni a DNS üzeneteinkből, hogy milyen weboldalakat olvasunk. Ezek a megoldások megvédik a DNS forgalmat.
 
-Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt (Client Hello üzenet). Amint a weboldalhoz kapcsolódunk, teljesen láthatóvá válik bárki számára, hogy kivel beszélünk. Egyetlen komoly előnye van a titkosított DNS üzenetnek, hogy nem lehet meghamisítani. A lehallgatástól nem véd meg.
+Viszont ugyanez az adat más forrásból is beszerezhető a TLS internetes protokoll egy sebezhetősége miatt (Client Hello üzenet, a TLS az internet titkosításért felelős rétege).
+Amint a weboldalhoz kapcsolódunk, teljesen láthatóvá válik bárki számára, hogy kivel beszélünk. A lehallgatástól nem véd meg a titkosított DNS, viszont az üzenetet többé már nem lehet meghamisítani, csak tiltani.
 
-Képen a lehallgatott kommunikáció, az alive.github.com tisztán kivehető:
+Az alábbi képen a lehallgatott kommunikációban az "alive.github.com" tisztán kivehető:
 
 ![TLS probléma](kepek/tls_problema.png)
 
