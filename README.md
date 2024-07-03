@@ -340,7 +340,10 @@ Semmilyen értelmes információ  nem olvasható ki belőle. Valami tor bejárat
 
 ### Az onion címek
 
-TBD
+A tor hálózatnak saját címzése is van, ami nem is hasonlít a jól megszokott DNS-re. Leginkább össze-vissza karakterekből áll. A két pont kiválaszt magának egy köztes találkozóhelyet egy tor csomópontban, ahol információt cserélhetnek. A kiszolgáló nem fogja ismerni az ügyfelet, az ügyfél sem a kiszolgálót, minden titokban fog maradni.
+
+A brave kereső onion címe:
+[https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/]([https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6](https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/))
 
 ### Biztonságos-e a TOR?
 
@@ -348,7 +351,7 @@ Legalább annyira, mint egy kivilágítatlan városban sétálni az utcán a sö
 
 ### Konklúzió
 
-TBD
+A véleményem szerint a jelenlegi internet legnagyobb problémája nem a beazonosíthatóság, hanem az, hogy ezt magánvállalatok bírósági végzések nélkül is megtehetik. Bárki bármibe belehallgathat a túloldal megkérdezése és bármiféle következmény nélkül. Erre válasz a TOR hálózat, ami visszavezet a 80-as évek világába: vírusok, illegális tartalmak, bűnszervezetek a neten. A hálózat nem örvendene ekkora népszerűségnek, ha magánjellegű tartalmakba csak okkal nézhetnének bele kizárólag állami rendfenntartó hatóságok.
 
 # Hogyan viszonyulnak az egyes kiszolgálók a névtelenséghez?
 
