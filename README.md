@@ -247,7 +247,8 @@ Egyedül a javascript (böngésző programok) tiltása biztosít 100%-os megold�
 
 ## A TOR hálózat (dark web)
 
-TBD
+1990-re világossá váltak az internetes rendszerek problémái, ezért az amerikai haditengerészet megbízta David Goldschlag-ot, Mike Reed-et és Paul Syverson-t, hogy vizsgálják ki, hogy lehetséges-e anonim módon kommunikálni a jelenlegi internetes hálózatokon. Ők készítették el először az onion routing alapkoncepcióját és prototípusát 1995-ben. Ebből nőtt ki a később a TOR hálózat.
+A TOR nyílt forrású hálózat, folyamatos fejlesztés alatt áll. Bárki megnézheti a kódják, ellenőrizheti, hogy megfelelően működik-e, fordíthat belőle saját példányt, ha nem bízik a rendelkezésünkre bocsájtott programokban.
 
 ### A hálózat működése
 
@@ -351,7 +352,7 @@ Legalább annyira, mint egy kivilágítatlan városban sétálni az utcán a sö
 
 ### Konklúzió
 
-A véleményem szerint a jelenlegi internet legnagyobb problémája nem a beazonosíthatóság, hanem az, hogy ezt magánvállalatok bírósági végzések nélkül is megtehetik. Bárki bármibe belehallgathat a túloldal megkérdezése és bármiféle következmény nélkül. Erre válasz a TOR hálózat, ami visszavezet a 80-as évek világába: vírusok, illegális tartalmak, bűnszervezetek a neten. A hálózat nem örvendene ekkora népszerűségnek, ha magánjellegű tartalmakba csak okkal nézhetnének bele kizárólag állami rendfenntartó hatóságok.
+A véleményem szerint a jelenlegi internet legnagyobb problémája nem a beazonosíthatóság, hanem az, hogy ezt magánvállalatok bírósági végzések nélkül is megtehetik. Bárki bármibe belehallgathat a túloldal megkérdezése és bármiféle következmény nélkül. Erre válasz a TOR hálózat, ami visszavezet a 80-as évek világába: vírusok, illegális tartalmak, bűnszervezetek a neten. A hálózat nem örvendene ekkora népszerűségnek, ha magánjellegű tartalmakba csak okkal nézhetnének bele, kizárólag állami rendfenntartó hatóságok.
 
 # Hogyan viszonyulnak az egyes kiszolgálók a névtelenséghez?
 
