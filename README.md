@@ -385,7 +385,7 @@ Legalább annyira, mint egy kivilágítatlan városban sétálni az utcán a sö
 
 ### Konklúzió
 
-A véleményem szerint a jelenlegi internet legnagyobb problémája nem a beazonosíthatóság, hanem az, hogy ezt magánvállalatok bírósági végzések nélkül is megtehetik. Bárki bármibe belehallgathat a túloldal megkérdezése és bármiféle következmény nélkül. Erre válasz a TOR hálózat, ami visszavezet a 80-as évek világába: vírusok, illegális tartalmak, bűnszervezetek a neten. A hálózat nem örvendene ekkora népszerűségnek, ha magánjellegű tartalmakba csak okkal nézhetnének bele, kizárólag állami rendfenntartó hatóságok.
+Véleményem szerint a jelenlegi internet legnagyobb problémája nem a beazonosíthatóság, hanem az, hogy ezt magánvállalatok bírósági végzések nélkül is megtehetik. Bárki bármibe belehallgathat a túloldal megkérdezése és bármiféle következmény nélkül. Erre válasz a TOR hálózat, ami visszavezet a 80-as évek világába: vírusok, illegális tartalmak, bűnszervezetek a neten. A hálózat nem örvendene ekkora népszerűségnek, ha magánjellegű tartalmakba csak okkal nézhetnének bele, kizárólag állami rendfenntartó hatóságok.
 
 # Hogyan viszonyulnak az egyes kiszolgálók a névtelenséghez?
 
