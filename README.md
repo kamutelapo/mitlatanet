@@ -42,7 +42,7 @@
 - [Hogyan viszonyulnak az egyes kiszolgálók a névtelenséghez?](#hogyan-viszonyulnak-az-egyes-kiszolgálók-a-névtelenséghez)
   - [www.google.com](#wwwgooglecom)
   - [www.duckduckgo.com](#wwwduckduckgocom)
-  - [www.brave.com](#wwwbravecom)
+  - [search.brave.com](#searchbravecom)
   - [www.facebook.com](#wwwfacebookcom)
   - [www.cloudflare.com](#wwwcloudflarecom)
   - [Konklúzió](#konklúzió-5)
@@ -403,9 +403,11 @@ A DuckDuckGo kiszolgál minket. Feldob egy fapados felületet nulla információ
 
 ![Névtelen DuckDuckGo](kepek/anon_duckduckgo.png)
 
-## www.brave.com
+## search.brave.com
 
-TBD
+A Brave felajánlja, hogy menjünk át az onion hálózatára, mert az biztonságosabb, ha teljesen ki akarjuk kerülni a megfigyelést és a cenzúrát.
+
+![Névtelen Brave](kepek/anon_brave.png)
 
 ## www.facebook.com
 
