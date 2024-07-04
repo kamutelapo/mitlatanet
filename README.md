@@ -9,7 +9,7 @@
     - [Megoldás a Client Hello üzenet eltakarására (ECH)](#megoldás-a-client-hello-üzenet-eltakarására-ech)
     - [Konklúzió](#konklúzió)
   - [Mit lát a weboldal, amihez kapcsolódunk?](#mit-lát-a-weboldal-amihez-kapcsolódunk)
-    - [Létezik egy oldal, amely megmutatja, hogy mit látnak belőlünk a túloldalon](#létezik-egy-oldal-amely-megmutatja-hogy-mit-látnak-belőlünk-a-túloldalon)
+    - [Egy lap, mely felfedi, amit lát belőlünk](#egy-lap-mely-felfedi-amit-lát-belőlünk)
     - [Helymeghatározás IP cím alapján](#helymeghatározás-ip-cím-alapján)
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
@@ -119,9 +119,9 @@ A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem l�
 
 ## Mit lát a weboldal, amihez kapcsolódunk?
 
-### Létezik egy oldal, amely megmutatja, hogy mit látnak belőlünk a túloldalon
+### Egy lap, mely felfedi, amit lát belőlünk
 
-Ha kíváncsiak vagyunk, hogy mit lát a túloldal, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Ez a weblap megmondja, hogy milyen információk szivárognak át hozzájuk.
+Ha kíváncsiak vagyunk az átszivárgó információkra, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Itt megnézhetjük, hogy egy kérésből milyen adatainkat lehet kinyerni.
 
 ### Helymeghatározás IP cím alapján
 
@@ -131,7 +131,7 @@ Az IP címünk a túloldal számára közelítőleg megjelöli, hogy hol vagyunk
 
 ### Digitális ujjlenyomatok
 
-A valós életben amikor megfogunk egy tárgyat az ujjlenyomatunk a tárgyon marad és ez annyira egyedi, hogy azonosít minket. Ugyanez történik, amikor egy lekérést kiküldünk egy weboldalhoz. Elküldjük az operációs rendszert, az IP címet, a böngésző típusát, verziószámát, a nyelvet, a kijelző méretét, telepített bővétményeket, jelkészleteket és ezer más tulajdonságot is. Annyi adatot, hogy az már azonosít minket.
+Amikor a valós életben a megfogunk egy tárgyat, az ujjlenyomatunk a tárgyon marad és ez annyira egyedi, hogy azonosít minket. Ugyanez történik, amikor kérést küldünk egy weboldalhoz. Olyan mennyiségű adat szivároghat át tőlünk, hogy azonosításra fel lehet használni, pont mint az ujjlenyomatok esetén.
 
 #### A HTTPS kérés értékes mezői
 
@@ -141,15 +141,15 @@ Amikor a böngészőnk meglátogat egy oldalt, elküldi a kérésben, hogy milye
 
 #### Javascript (futtatható kód) felhasználása a számítógépünk, telefonunk képességeinek felderítésére
 
-A javascript a böngészők programnyelve. Amikor betöltünk egy weboldalt, sokszor egy program is végrehajtódik (javascript), innentől az ujjlenyomat olvasási képességek megsokszorozódnak. Lekérdezhetjük a kijelző méretét, a telepített jelkészleteket, a 3D gyorsítókártya képességeit, a böngésző beállításait, ez egyedivé tehet minket, megkülönböztetve a többi felhasználótól.
+A javascript a böngészők programnyelve. Amikor betöltünk egy weboldalt, sokszor program is végrehajtódhat vele (javascript), innentől az ujjlenyomat olvasási képességek megsokszorozódnak. Lekérdezhetjük a kijelző méretét, a telepített jelkészleteket, a böngésző pluginokat, a 3D gyorsítókártya képességeit, a böngésző beállításait, mindez egyedivé tehet minket, megkülönböztetve a többi felhasználótól.
 
-A telefonokban 2D/3D hardveres gyorsítók is vannak és mindegyik egy kicsit másképp számol, de majdnem ugyanazt a képet rajzolja ki. Ezek az apró különbségek képesek a telefon, vagy a videókártya típusának egyértelmű beazonosítására.
+A telefonokban 2D/3D hardveres gyorsítók is vannak és mindegyik egy kicsit másképp számol, de majdnem ugyanazt a képet rajzolja ki. Ezek az apró különbségek képesek a telefon, vagy videókártya típusának egyértelmű beazonosítására.
 
 ![WEBGL](kepek/webgl.png)
 
 ### Konklúzió
 
-A túloldal látja, hogy milyen tartalmakat olvasunk és a számítógépünk, vagy telefonunk egyediségét kihasználva (ujjlenyomat) képes lehet bejelentkezés nélkül is azonosítani minket. Ha később kiderülne a személyazonosságunk (pl. fizetés), az ujjlenyomatunkat akár teljes névvel és címmel is összeköthetik.
+A túloldal látja, hogy milyen tartalmakat olvasunk és a számítógépünk, vagy telefonunk egyediségét kihasználva (ujjlenyomat) képes lehet bejelentkezés nélkül is azonosítani minket. Ha később kiderülne a személyazonosságunk (pl. fizetésnél), az ujjlenyomatunkat akár névvel és címmel is összeköthetik.
 
 ## Információcsere internetes weblapok között
 
