@@ -1,6 +1,6 @@
-![Mit árul el rólunk az internet](kepek/mit_arul_el_az_internet.png)
+![Mit tud rólunk az internet](kepek/mit_tud_rolunk_az_internet.png)
 
-- [Mit árul el rólunk az internet?](#mit-árul-el-rólunk-az-internet)
+- [Mit tud rólunk az internet?](#mit-tud-rólunk-az-internet)
   - [Mit lát a szolgáltató / az internetes protokoll sebezhetőségei](#mit-lát-a-szolgáltató--az-internetes-protokoll-sebezhetőségei)
     - [Az IP címről](#az-ip-címről)
     - [A titkosítatlan névfeloldás problémái (DNS)](#a-titkosítatlan-névfeloldás-problémái-dns)
@@ -48,7 +48,7 @@
   - [Konklúzió](#konklúzió-5)
 
 
-# Mit árul el rólunk az internet?
+# Mit tud rólunk az internet?
 
 Felvetődhet a kérdés, hogy internetezés közben valaki belehallgat-e a titkosított adatfolyamokba, hozzájuthat-e értékes információkhoz rólunk. A dokumentum azt elemzi ki, hogy ez elvi szinten lehetséges-e. Hogy a valóságban mi történik, azt nem tudom.
 

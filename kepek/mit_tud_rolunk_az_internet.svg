@@ -16,8 +16,8 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="mit_arul_el_az_internet.svg"
-   inkscape:export-filename="/home/ckarai/tmp/kamutelapo/mitlatanet/kepek/mit_arul_el_az_internet.png"
+   sodipodi:docname="mit_tud_rolunk_az_internet.svg"
+   inkscape:export-filename="./mit_tud_rolunk_az_internet.png"
    inkscape:export-xdpi="150"
    inkscape:export-ydpi="150">
   <defs
@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="-169.12295"
-     inkscape:cy="692.36651"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="427.26553"
+     inkscape:cy="780.20646"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -95,13 +95,16 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.69999981px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="12.019647"
+       x="19.42798"
        y="111.41369"
-       id="text838"><tspan
+       id="text838"
+       inkscape:export-filename="./text838.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
          sodipodi:role="line"
          id="tspan836"
-         x="12.019647"
+         x="19.42798"
          y="111.41369"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.69999981px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000;fill-opacity:1;stroke-width:0.26458332">Mit árul el rólunk az internet?</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.69999981px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000;fill-opacity:1;stroke-width:0.26458332">Mit tud rólunk az internet?</tspan></text>
   </g>
 </svg>
