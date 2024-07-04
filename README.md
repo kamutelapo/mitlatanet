@@ -426,4 +426,4 @@ A CloudFlare visszautasít javascript nélkül. Amennyiben bekapcsoljuk, akkor e
 
 ## Konklúzió
 
-A legbiztonságosabb megoldást - a javascript tiltását - nagyon sok oldal blokkolni fogja. Amennyiben engedélyezzük, ujjlenyomatot fognak venni és átengedni. Szerencsére a TOR böngésző valamennyire összekavarja az ujjlenyomatunkat, ami megnehezítheti a beazonosítást.
+A legbiztonságosabb megoldást - a javascript tiltását - nagyon sok oldal blokkolni fogja. Amennyiben engedélyezzük, ujjlenyomatot fognak venni és átengedni. Szerencsére a TOR és a Brave böngészők valamennyire összekavarhatják az ujjlenyomatunkat, ami megnehezítheti a beazonosítást.
