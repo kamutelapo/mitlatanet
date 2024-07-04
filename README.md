@@ -391,7 +391,11 @@ Véleményem szerint a jelenlegi internet legnagyobb problémája nem a beazonos
 
 ## www.google.com
 
-TBD
+A Google visszautasít minket. Azt írja, hogy engedélyezni kell a javascriptet a böngészőn a folytatáshoz. Ez a hálózat blokkolva van rosszindulatú viselkedés miatt és a Google tudni akarja rólunk, hogy robotok vagyunk-e, vagy emberek.
+
+Ha engedélyezzük a javascript-et, úgy digitális ujjlenyomat is vehető tőlünk.
+
+![Névtelen Google](kepek/anon_google.png)
 
 ## www.duckduckgo.com
 
