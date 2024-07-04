@@ -9,7 +9,7 @@
     - [Megoldás a Client Hello üzenet eltakarására (ECH)](#megoldás-a-client-hello-üzenet-eltakarására-ech)
     - [Konklúzió](#konklúzió)
   - [Mit lát a weboldal, amihez kapcsolódunk?](#mit-lát-a-weboldal-amihez-kapcsolódunk)
-    - [Egy lap, mely felfedi, amit lát belőlünk](#egy-lap-mely-felfedi-amit-lát-belőlünk)
+    - [Egy lap, mely felfedi, hogy mit lát belőlünk](#egy-lap-mely-felfedi-hogy-mit-lát-belőlünk)
     - [Helymeghatározás IP cím alapján](#helymeghatározás-ip-cím-alapján)
     - [Digitális ujjlenyomatok](#digitális-ujjlenyomatok)
       - [A HTTPS kérés értékes mezői](#a-https-kérés-értékes-mezői)
@@ -119,7 +119,7 @@ A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem l�
 
 ## Mit lát a weboldal, amihez kapcsolódunk?
 
-### Egy lap, mely felfedi, amit lát belőlünk
+### Egy lap, mely felfedi, hogy mit lát belőlünk
 
 Ha kíváncsiak vagyunk az átszivárgó információkra, érdemes megnyitni a [https://browserleaks.com/](https://browserleaks.com/) honlapot. Itt megnézhetjük, hogy egy kérésből milyen adatainkat lehet kinyerni.
 
