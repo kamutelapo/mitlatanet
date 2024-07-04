@@ -45,7 +45,6 @@
   - [www.brave.com](#wwwbravecom)
   - [www.facebook.com](#wwwfacebookcom)
   - [www.cloudflare.com](#wwwcloudflarecom)
-  - [Hogyan használhatunk névtelenül szkripteket is?](#hogyan-használhatunk-névtelenül-szkripteket-is)
   - [Konklúzió](#konklúzió-5)
 
 
@@ -149,7 +148,7 @@ A telefonokban 2D/3D hardveres gyorsítók is vannak és mindegyik egy kicsit m�
 
 ### Konklúzió
 
-A túloldal látja, hogy milyen tartalmakat olvasunk és a számítógépünk, vagy telefonunk egyediségét kihasználva (ujjlenyomat) képes lehet bejelentkezés nélkül is azonosítani minket. Ha később kiderülne a személyazonosságunk (pl. fizetésnél), az ujjlenyomatunkat akár névvel és címmel is összeköthetik.
+A túloldal látja, hogy milyen tartalmakat olvasunk és a számítógépünk, vagy telefonunk egyediségét kihasználva (ujjlenyomat) képes lehet bejelentkezés nélkül is követni minket. Ha később kiderülne a személyazonosságunk (pl. fizetésnél), az internetezési szokásainkat akár névvel és címmel is összekötheti.
 
 ## Információcsere internetes weblapok között
 
@@ -407,10 +406,6 @@ TBD
 TBD
 
 ## www.cloudflare.com
-
-TBD
-
-## Hogyan használhatunk névtelenül szkripteket is?
 
 TBD
 
