@@ -399,7 +399,9 @@ Ha engedélyezzük a javascript-et, úgy digitális ujjlenyomat is vehető től�
 
 ## www.duckduckgo.com
 
-TBD
+A DuckDuckGo kiszolgál minket. Feldob egy fapados felületet nulla információval, de keresésre még azért jól használható.
+
+![Névtelen DuckDuckGo](kepek/anon_duckduckgo.png)
 
 ## www.brave.com
 
