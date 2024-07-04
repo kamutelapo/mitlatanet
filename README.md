@@ -130,7 +130,7 @@ Az IP címünk a túloldal számára közelítőleg megjelöli, hogy hol vagyunk
 
 ### Digitális ujjlenyomatok
 
-Amikor a valós életben a megfogunk egy tárgyat, az ujjlenyomatunk a tárgyon marad és ez annyira egyedi, hogy azonosít minket. Ugyanez történik, amikor kérést küldünk egy weboldalhoz. Olyan mennyiségű adat szivároghat át tőlünk, hogy azonosításra fel lehet használni, pont mint az ujjlenyomatok esetén.
+Amikor a valós életben megfogunk egy tárgyat, az ujjlenyomatunk a tárgyon marad és ez annyira egyedi, hogy azonosít minket. Ugyanez történik, amikor kérést küldünk egy weboldalhoz. Olyan mennyiségű adat jut át rólunk, hogy azonosításra fel lehet használni, pont mint az ujjlenyomatok esetén.
 
 #### A HTTPS kérés értékes mezői
 
