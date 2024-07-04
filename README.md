@@ -393,7 +393,7 @@ Véleményem szerint a jelenlegi internet legnagyobb problémája nem a beazonos
 
 A Google visszautasít minket. Azt írja, hogy engedélyezni kell a javascriptet a böngészőn a folytatáshoz. Ez a hálózat blokkolva van rosszindulatú viselkedés miatt és a Google tudni akarja rólunk, hogy robotok vagyunk-e, vagy emberek.
 
-Ha engedélyezzük a javascript-et, úgy digitális ujjlenyomat is vehető tőlünk.
+Ha engedélyezzük a javascript-et, úgy digitális ujjlenyomat is vehető tőlünk. Miután egy csomó CAPTCHA kérdésre válaszolunk, akkor továbbenged.
 
 ![Névtelen Google](kepek/anon_google.png)
 
@@ -420,8 +420,10 @@ A Facebook egyszer megköveteli a személyazonosítást, viszont ha ez megtört�
 
 ## www.cloudflare.com
 
-TBD
+A CloudFlare visszautasít javascript nélkül. Amennyiben bekapcsoljuk, akkor egy hosszú azonosítási folyamat után továbbenged (talán ujjlenyomat vétel?).
+
+![Névtelen CloudFlare](kepek/anon_cloudflare.png)
 
 ## Konklúzió
 
-TBD
+A legbiztonságosabb megoldást - a javascript tiltását - nagyon sok oldal blokkolni fogja. Amennyiben engedélyezzük, ujjlenyomatot fognak venni és átengedni. Szerencsére a TOR böngésző valamennyire összekavarja az ujjlenyomatunkat, ami megnehezítheti a beazonosítást.
