@@ -247,7 +247,7 @@ Egyedül a javascript (böngésző programok) tiltása biztosít 100%-os megold�
 
 ## A TOR hálózat (dark web)
 
-1990-re világossá váltak az internetes rendszerek problémái, ezért az amerikai haditengerészet megbízta David Goldschlag-ot, Mike Reed-et és Paul Syverson-t, hogy vizsgálják ki, hogy lehetséges-e anonim módon kommunikálni a jelenlegi internetes hálózatokon. Ők készítették el először az onion routing alapkoncepcióját és prototípusát 1995-ben. Ebből nőtt ki a később a TOR hálózat.
+1990-re világossá váltak az internetes rendszerek problémái, ezért az amerikai haditengerészet megbízta David Goldschlag-ot, Mike Reed-et és Paul Syverson-t, hogy vizsgálják ki, hogy lehetséges-e anonim módon kommunikálni a jelenlegi internetes hálózatokon. Ők készítették el először az onion routing alapkoncepcióját és prototípusát 1995-ben. Ebből nőtt ki később a TOR hálózat.
 A TOR nyílt forrású hálózat, folyamatos fejlesztés alatt áll. Bárki megnézheti a kódját, ellenőrizheti, hogy megfelelően működik-e, fordíthat belőle saját példányt, ha nem bízik a rendelkezésünkre bocsájtott programokban.
 Jelenleg is használják a TOR hálózatot, amikor adatokat próbálnak kicsempészni bizonyos országokból.
 
@@ -257,7 +257,7 @@ Jelenleg is használják a TOR hálózatot, amikor adatokat próbálnak kicsemp�
 
 A TOR hálózattal az IP címünket rejthetjük el némi trükközés segítségével.
 
-A működés egyszerűen:
+A működése egyszerűen leírva:
 
 * kiválasztunk 3 csomópontot véletlenszerűen, lehetőleg 3 különböző országból (ezt automatikusan megcsinálja a rendszer)
 * az adatokat 3 kulccsal titkosítjuk
@@ -289,7 +289,7 @@ Szerencsére nagyon sok magánember is biztosít TOR bejáratot, relét és kij�
 
 ### Legális-e a használata?
 
-Vannak országok, ahol tiltják a TOR hálózatot (ahol erős a cenzúra), viszont Magyarországon jelenleg szabad használni. Vannak KFT-k is, amelyek tor végpontokat üzemeltetnek.
+Vannak országok, ahol tiltják a TOR hálózatot (az erős cenzúra miatt), viszont Magyarországon jelenleg szabad használni. Vannak KFT-k is, amelyek tor végpontokat üzemeltetnek.
 
 ### A TOR böngésző telepítésének menete
 
