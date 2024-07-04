@@ -411,7 +411,12 @@ A Brave felajánlja, hogy menjünk át az onion hálózatára, mert az biztonsá
 
 ## www.facebook.com
 
-TBD
+A Facebook egyszer megköveteli a személyazonosítást, viszont ha ez megtörtént, akkor utána már felkereshetjük anonim módon is. Cenzúrát alkalmazó országokból is tudunk biztonságosan Facebook-olni, olyannyira, hogy saját onion elérhetősége is van a dark weben.
+
+[https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion](https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion)
+
+![Névtelen Facebook](kepek/anon_facebook.png)
+
 
 ## www.cloudflare.com
 
