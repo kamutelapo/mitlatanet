@@ -341,7 +341,7 @@ gpgv:                using RSA key 613188FC5BE2176E3ED54901E53D989A9E2D47BF
 gpgv: Good signature from "Tor Browser Developers (signing key) <torbrowser@torproject.org>"
 ```
 
-A "good signature" jelenti azt, hogy sikerült az ellenőrzés. Azt töltöttük le, amit a weboldal adott nekünk. Ezután kedvünkre telepíthetjük. Elsőre kissé macerásnak tűnhet, de ellenőrizetlen forrásból nem érdemes letölteni, mert egy csomó kézen átmehet és fogalmunk sem lesz róla, ki milyen kiskaput rak bele. Semmilyen biztonságot nem nyújtanak a nagy szoftveráruházból telepített példányok.
+A "good signature" jelenti azt, hogy sikerült az ellenőrzés. Azt töltöttük le, amit a weboldal adott nekünk. Ezután kedvünkre telepíthetjük. Elsőre kissé macerásnak tűnhet, de ellenőrizetlen forrásból nem érdemes letölteni, mert egy csomó kézen átmehet és fogalmunk sem lesz róla, ki milyen kiskaput rak bele. Semmilyen biztonságot nem nyújtanak a nagy szoftveráruházakból telepített példányok.
 
 
 ### A nyelv átállítása
