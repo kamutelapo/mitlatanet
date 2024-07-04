@@ -52,7 +52,7 @@
 
 Felvetődhet a kérdés, hogy internetezés közben valaki belehallgat-e a titkosított adatfolyamokba, hozzájuthat-e értékes információkhoz rólunk. A dokumentum azt elemzi ki, hogy ez elvi szinten lehetséges-e. Hogy a valóságban mi történik, azt nem tudom.
 
-Az elemzéshez a wireshark hálózati analizátort használtam.
+Az elemzéshez a wireshark hálózati analizátort, Firefox, Brave és Tor böngészőket használtam.
 
 
 ## Mit lát a szolgáltató / az internetes protokoll sebezhetőségei
@@ -110,11 +110,11 @@ Az alábbi képen a titkosított(!) kommunikációt lehallgatva az "alive.github
 
 ### Megoldás a Client Hello üzenet eltakarására (ECH)
 
-Természetesen észlelték már a problémát, hogy nem előnyös, ha bárki megtudhatja, hogy milyen oldalakkal beszélgetünk, ezért megjelent az ESNI, majd később ECH megoldás. Az ECH titkosítja a Client Hello üzenetnek a problémás részét, kitakarva belőle minden érzékeny adatot. Az ECH opcionális, jelenleg nagyon kevés weboldal támogatja. Firefox alatt a DNS-over-HTTPS ECH-t is használna, de minthogy az oldalak 95%-a nem implementálta, sokra nem megyünk vele. Reméljük ez megváltozik a jövőben.
+Ismert a probléma, hogy a TLS Client Hello érzékeny információkat fedhet fel, ennek javítására meg is jelent az ESNI, majd később az ECH megoldás (Encrypted Client Hello). Az ECH titkosítja a Client Hello üzenetnek a problémás részét, kitakarva belőle minden érzékeny adatot. Az ECH opcionális, jelenleg nagyon kevés weboldal támogatja. Firefox alatt a DNS-over-HTTPS ECH-t is használna, de minthogy a jelenlegi oldalak zöme nem implementálta, sokra nem megyünk vele. Reméljük ez megváltozik a jövőben.
 
 ### Konklúzió
 
-A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk rajta. A DNS/TLS protokollok biztonsági rései miatt viszont elvileg megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni valaki politikai hovatartozását, szokásait, érdeklődési körét névreszólóan. Elvileg nem lehetetlen megszerezni ezeket az adatokat. Bízunk benne, hogy nem teszik meg. Általános megoldás jelenleg nincs a probléma kivédésére, az ECH bizonyos lapokat eltakarhat, de a többségük titkosítatlanul fog átmenni a rendszeren.
+A legtöbb kapcsolat HTTPS alatt fut és titkosítva van, a szolgáltató nem látja, hogy milyen beszélgetést folytatunk rajta. A DNS/TLS protokollok biztonsági rései miatt viszont elvileg megláthatja a weblapok nevét, amit olvasunk. Azt is lemérheti, hogy mennyit időt töltünk ezeken az oldalakon, ebből az információból pedig egészen pontosan meg lehet tippelni valaki politikai hovatartozását, szokásait, érdeklődési körét névreszólóan. Elvileg nem lehetetlen megszerezni ezeket az adatokat. Bízunk benne, hogy nem teszik meg. Általános megoldás jelenleg nincs a probléma kivédésére, az ECH bizonyos lapokat eltakarhat, de a többségük neve titkosítatlanul fog átmenni a rendszeren, csak a tartalma lesz láthatatlan.
 
 ## Mit lát a weboldal, amihez kapcsolódunk?
 
